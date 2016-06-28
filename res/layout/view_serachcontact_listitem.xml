@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/serachcontact_listitem_onclicklayout" android:background="@drawable/list_item_message_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <View android:id="@id/serachcontact_listitem_line" android:background="@color/contanct_list_item_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" />
+        <ImageView android:id="@id/serachcontact_listitem_imagepic" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/avatar_8" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/contanct_color" android:id="@id/serachcontact_listitem_textname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <com.huajiao.views.RoundedImageView android:id="@id/img_header" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" fresco:placeholderImage="@drawable/head_default" fresco:failureImage="@drawable/head_default" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/layer_color_5" />
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/add_filedcontrol" android:background="@drawable/defriend_button_back1" android:layout_width="100.0dip" android:layout_height="33.0dip" android:layout_marginRight="10.0dip" android:text="取消场控" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/add_filedcontrol" android:layout_toRightOf="@id/img_header" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" />
+                <com.huajiao.views.UserLevelView android:id="@id/fans_list_item_level" android:layout_marginLeft="2.0dip" android:text="" style="@style/big_level_style" />
+                <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="#fff12938" android:id="@id/tv_banned" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(已封禁)" android:singleLine="true" />
+            </LinearLayout>
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="@color/text_color_3" android:ellipsize="end" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

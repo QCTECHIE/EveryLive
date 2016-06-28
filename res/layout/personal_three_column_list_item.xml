@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/left_rl" android:clickable="true" android:layout_width="0.0dip" android:layout_height="119.29999dip" android:layout_weight="1.0">
+        <View android:id="@id/left_top_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <pl.droidsonroids.gif.GifImageView android:id="@id/left_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_below="@id/left_top_line" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+        <RelativeLayout android:id="@id/left_mask_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/left_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/explore_level_icon" android:layout_alignParentRight="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/left_watch_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/person_works_visit_num" android:layout_toLeftOf="@id/left_type" />
+            <ImageView android:id="@id/left_living_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_live_icon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_width="1.0dip" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/center_rl" android:clickable="true" android:layout_width="0.0dip" android:layout_height="119.29999dip" android:layout_weight="1.0">
+        <View android:id="@id/center_top_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <pl.droidsonroids.gif.GifImageView android:id="@id/center_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_below="@id/center_top_line" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+        <RelativeLayout android:id="@id/center_mask_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/center_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/explore_level_icon" android:layout_alignParentRight="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/center_watch_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:maxWidth="70.0dip" android:text="@string/person_works_visit_num" android:layout_toLeftOf="@id/center_type" />
+            <ImageView android:id="@id/center_living_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_live_icon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_width="1.0dip" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/right_rl" android:clickable="true" android:layout_width="0.0dip" android:layout_height="119.29999dip" android:layout_weight="1.0">
+        <View android:id="@id/right_top_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <pl.droidsonroids.gif.GifImageView android:id="@id/right_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_below="@id/right_top_line" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+        <RelativeLayout android:id="@id/right_mask_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/right_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/explore_level_icon" android:layout_alignParentRight="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/right_watch_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/person_works_visit_num" android:layout_toLeftOf="@id/right_type" />
+            <ImageView android:id="@id/right_living_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_live_icon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

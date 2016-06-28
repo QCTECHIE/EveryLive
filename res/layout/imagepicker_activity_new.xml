@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/headerlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <GridView android:gravity="center" android:id="@id/id_listview" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:numColumns="3" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/headerlayout" />
+    <com.huajiao.views.common.ViewItemState android:id="@id/view_state" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerlayout" />
+    <View android:id="@id/mask" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.imagepicker.MenuChooseDir android:id="@id/srcoll_menu" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="420.0dip" android:layout_below="@id/headerlayout">
+        <ListView android:gravity="center" android:id="@id/menu_list" android:background="#00000000" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" />
+    </com.huajiao.imagepicker.MenuChooseDir>
+</RelativeLayout>

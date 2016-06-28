@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/video_action_popup_bg" android:layout_width="wrap_content" android:layout_height="34.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/video_action_report" android:layout_width="64.0dip" android:layout_height="fill_parent" android:text="@string/action_report" style="@style/list_video_action_text_style" />
+    <View android:id="@id/video_save_divider" android:background="#ff66657b" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="21.0dip" />
+    <TextView android:gravity="center" android:id="@id/video_action_save" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="fill_parent" android:text="@string/action_save" style="@style/list_video_action_text_style" />
+</LinearLayout>

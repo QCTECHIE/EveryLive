@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/layer_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height">
+        <ImageView android:id="@id/explore_search_btn" android:layout_width="@dimen/top_bar_height" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_tab_search_line" android:scaleType="centerInside" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广场" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/explore_rank_btn" android:layout_width="@dimen/top_bar_height" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:src="@drawable/ic_nav_rank" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.alimon.lib.tabindiactorlib.widget.TabPagerView android:id="@id/explore_tag_page_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

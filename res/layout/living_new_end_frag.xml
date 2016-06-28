@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_all" android:background="#b3000000" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerVertical="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_summary" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="您的视频已被停播" android:singleLine="false" android:layout_above="@id/line" android:layout_centerHorizontal="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_us" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="有问题请联系我们哦~\n花椒微信公众号：huajiao_1" android:singleLine="false" android:layout_above="@id/btn_end" android:layout_centerHorizontal="true" />
+    <com.huajiao.views.ButtonWithFont android:textSize="16.659973sp" android:textColor="#ffffffff" android:id="@id/btn_end" android:background="@drawable/btn_bg_living_end" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="82.69998dip" android:text="返回首页" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:src="@drawable/cry" android:layout_above="@id/text_summary" android:layout_centerHorizontal="true" />
+</RelativeLayout>

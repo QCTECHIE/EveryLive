@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/auchor_iv" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_border_width="2.0dip" app:riv_border_color="@color/color_white_alpha_60" app:riv_oval="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/auchor_iv" android:layout_centerVertical="true">
+            <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/content_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:id="@id/redbag_iv" android:layout_width="21.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/list_item_redbag_btn_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="#ffef5350" android:id="@id/money_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

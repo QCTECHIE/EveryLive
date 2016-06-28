@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/pop_bg_ban" android:layout_width="329.0dip" android:layout_height="181.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/dlg_title0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/top_bar_right_text_color" android:gravity="center" android:id="@id/dlg_ok" android:layout_width="150.0dip" android:layout_height="43.0dip" android:layout_marginLeft="0.0dip" android:layout_marginBottom="0.0dip" android:text="确定" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/top_bar_right_text_color" android:gravity="center" android:id="@id/dlg_cancle" android:layout_width="150.0dip" android:layout_height="43.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" android:text="取消" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

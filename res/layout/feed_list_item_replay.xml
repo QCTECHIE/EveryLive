@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.main.home.view.FeedTopComponent android:id="@id/feed_replay_top" android:layout_width="fill_parent" android:layout_height="@dimen/feed_top_component_height" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/feed_replay_cover_view" android:layout_width="fill_parent" android:layout_height="150.0dip" fresco:placeholderImage="@drawable/main_def_bg" fresco:placeholderImageScaleType="centerCrop" fresco:actualImageScaleType="centerCrop" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="15.0sp" android:textColor="@color/text_color_5" android:id="@id/feed_replay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.huajiao.views.TextViewWithFont android:textSize="13.0sp" android:textColor="@color/text_color_5" android:id="@id/feed_replay_watches" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/feed_replay_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/explore_tag_replay_big" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.huajiao.main.home.view.FeedBottomAction android:id="@id/feed_replay_action" android:layout_width="fill_parent" android:layout_height="@dimen/feed_action_component_height" />
+    <com.huajiao.main.home.view.FeedBottomComment android:id="@id/feed_replay_comments" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

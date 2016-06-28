@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <com.huajiao.views.TextViewWithFont android:text="提醒声音" style="@style/tv_user_center_item" />
+        <ImageView android:id="@id/sound_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_toggle_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.huajiao.views.TextViewWithFont android:text="免打扰" style="@style/tv_user_center_item" />
+        <ImageView android:id="@id/toggle_trouble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_toggle_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="@color/color_T1" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="晚上11点-早上8点不会收到提示音" />
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/notification_layout" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.huajiao.views.TextViewWithFont android:text="通知" style="@style/tv_user_center_item" />
+        <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/startlive_notification_layout" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.huajiao.views.TextViewWithFont android:text="开播提醒" style="@style/tv_user_center_item" />
+        <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+    </RelativeLayout>
+</LinearLayout>

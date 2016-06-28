@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+    <ImageView android:layout_gravity="right" android:id="@id/btn_delete" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/feedback_image_delete" android:layout_alignParentRight="true" />
+</merge>

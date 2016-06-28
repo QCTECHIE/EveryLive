@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tools_splite_top" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <com.huajiao.views.TextViewWithFont android:textSize="11.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/choice_zhuanfa_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="11.0dip" />
+    <View android:id="@id/choice_zhuanfa_divider" android:background="@color/list_item_inner_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/choice_user_avatar" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginLeft="11.0dip" android:scaleType="centerCrop" app:riv_oval="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="13.0sp" android:textColor="#ff010101" android:ellipsize="end" android:id="@id/choice_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <com.huajiao.views.TextViewWithFont android:textSize="11.0sp" android:textColor="#ff555555" android:ellipsize="end" android:id="@id/choice_video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/feed_top_right_layout" android:layout_width="95.0dip" android:layout_height="fill_parent" android:layout_marginRight="11.0dip">
+            <ImageView android:id="@id/choice_follow_btn" android:layout_width="95.0dip" android:layout_height="27.0dip" android:src="@drawable/choice_followed_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

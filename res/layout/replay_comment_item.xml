@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main" android:padding="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_listcomment_marginleft">
+        <RelativeLayout android:id="@id/layout_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_listcomment_comemnt_marginleft">
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="@color/text_color_1" android:id="@id/replay_comment_item_name" android:paddingRight="@dimen/detail_listcomment_text_paddingright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_listcomment_text_marginleft" android:text="dfdfetertertdfdf" android:singleLine="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="10.0dip" android:textColor="#ffaaaaaa" android:gravity="bottom" android:id="@id/replay_comment_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ddd" android:singleLine="true" android:layout_alignParentRight="true" />
+            <com.huajiao.views.emoji.EmojiconTextView android:textSize="12.0dip" android:textColor="#ff383838" android:id="@id/replay_comment_content" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_listcomment_text_marginleft" android:layout_marginTop="5.0dip" android:text="content" android:layout_below="@id/replay_comment_item_name" />
+            <View android:layout_width="20.0dip" android:layout_height="@dimen/detail_listcomment_bottom_margin" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@id/replay_comment_usericon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/logo180" android:layout_alignParentLeft="true" app:riv_border_width="1.0dip" app:riv_border_color="@color/white" app:riv_oval="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff34b6fd" android:id="@id/replay_comment_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回复" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

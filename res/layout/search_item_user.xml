@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/search_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/search_item_user_icon_container" android:layout_width="@dimen/user_head_width" android:layout_height="@dimen/user_head_width" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/search_item_user_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/head_default" android:scaleType="centerCrop" fresco:riv_oval="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/right_focus_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center|right" android:id="@id/arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rank_list_item_followed_icon" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/focus_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rank_list_item_follow_icon" />
+    </FrameLayout>
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="20.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="73.0dip" android:layout_toLeftOf="@id/right_focus_layout" android:layout_toRightOf="@id/search_item_user_icon_container">
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff434343" android:id="@id/search_item_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="5.0dip" />
+        <com.huajiao.views.TextViewWithFont android:textSize="11.0sp" android:textColor="#ff666666" android:id="@id/search_item_user_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="11.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/search_item_user_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:layout_above="@id/search_item_user_fans" android:layout_below="@id/search_item_user_name" />
+    </RelativeLayout>
+    <View android:id="@id/search_item_user_divider" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/car_in_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/car_in" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <RelativeLayout android:id="@id/car_shake_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/car_shake_margin_top">
+        <View android:id="@id/car_shake_view" android:background="@drawable/car_level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/car_wheel_view" android:background="@drawable/car_wheel_level" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView android:id="@id/car_out_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/car_out" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <include android:layout_width="wrap_content" android:layout_height="24.0dip" layout="@layout/effect_title_view" />
+</merge>

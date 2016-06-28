@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <com.huajiao.views.TextViewWithFont android:text="上传日志" style="@style/tv_user_center_item" />
+        <ImageView android:id="@id/log_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_toggle_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="@color/color_T1" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="开启上传日志功能，您的操作会被记录到日志文件中，请保持网络畅通，退出应用时，会自动上传日志文件到服务端！" />
+    <RelativeLayout android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <com.huajiao.views.TextViewWithFont android:text="看播耗时toast" style="@style/tv_user_center_item" />
+        <ImageView android:id="@id/watches_toast_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_toggle_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="@color/color_T1" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="看播开流耗时。左右切是开流耗时+500毫秒delay的时间" />
+</LinearLayout>

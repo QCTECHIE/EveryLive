@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/activity_officalmsgactivity_barlayout" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" />
+    <com.huajiao.views.listview.RefreshListView android:id="@id/activity_officalmsgactivity_listview" android:fadingEdge="none" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_bar_height" android:listSelector="@color/transparents" android:scrollingCache="false" android:transcriptMode="normal" android:divider="@color/transparents" android:dividerHeight="0.0dip" android:smoothScrollbar="true" android:overScrollMode="never" />
+</FrameLayout>

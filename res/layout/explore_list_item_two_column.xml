@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffeeeeee" android:paddingLeft="@dimen/explore_two_column_padding_left" android:paddingRight="@dimen/explore_two_column_padding_right" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.main.explore.sub.ExploreLiveView android:id="@id/live_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <View android:id="@id/middle_divider" android:background="#ffeeeeee" android:layout_width="@dimen/explore_two_column_divider_width" android:layout_height="fill_parent" />
+    <com.huajiao.main.explore.sub.ExploreLiveView android:id="@id/live_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

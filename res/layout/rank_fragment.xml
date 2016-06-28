@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_height">
+        <com.huajiao.main.star.view.ViewPagerTitleIndicator android:id="@id/hs_title" android:background="#ffffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" />
+        <View android:id="@id/indicator_left" android:background="@drawable/vp_title_left_block" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:alpha="0.5" />
+        <View android:id="@id/indicator_right" android:background="@drawable/vp_title_right_block" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:alpha="0.5" />
+    </RelativeLayout>
+    <View android:id="@id/bottom_line_view" android:background="@drawable/top_or_bottom_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

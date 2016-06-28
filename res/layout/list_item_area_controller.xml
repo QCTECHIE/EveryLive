@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <com.huajiao.views.RoundedImageView android:id="@id/img_header" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" android:layout_centerVertical="true" fresco:placeholderImage="@drawable/head_default" fresco:failureImage="@drawable/head_default" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/layer_color_5" />
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/tv_remove" android:background="@drawable/round8_black_border_btn_bg_normal" android:layout_width="76.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:text="取消场控" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/tv_remove" android:layout_toRightOf="@id/img_header" android:layout_alignTop="@id/img_header">
+            <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff3b3b3b" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="望月枫眠" android:maxLines="1" />
+            <com.huajiao.views.UserLevelView android:id="@id/user_level_view" android:layout_marginLeft="2.0dip" style="@style/big_level_style" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:text="望月枫眠" android:maxLines="1" android:layout_toLeftOf="@id/tv_remove" android:layout_toRightOf="@id/img_header" android:layout_below="@id/layout_name" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignLeft="@id/layout_name" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

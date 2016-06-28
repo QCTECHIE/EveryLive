@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_share_img_height">110.0dip</dimen>
+    <dimen name="dialog_share_img_width">83.0dip</dimen>
+    <dimen name="finish_view_header_top">10.0dip</dimen>
+    <dimen name="finish_view_header_width">20.0dip</dimen>
+    <dimen name="finish_view_title_top">10.0dip</dimen>
+    <dimen name="login_view_divide_top">10.0dip</dimen>
+</resources>

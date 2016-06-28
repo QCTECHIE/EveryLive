@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="@dimen/indicator_text_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alimon.lib.tabindiactorlib.widget.TextViewWithFont android:textSize="15.0dip" android:textColor="@color/vpi_live_tabview_text" android:gravity="center" android:id="@id/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.alimon.lib.tabindiactorlib.widget.TextViewWithFont android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/tab_message" android:background="@drawable/red_circular" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+    <View android:id="@id/tab_bottom_indicator" android:layout_width="20.0dip" android:layout_height="@dimen/indicator_indicator_line_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</merge>

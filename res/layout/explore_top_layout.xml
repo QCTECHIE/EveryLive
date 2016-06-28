@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/layer_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/explore_search_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/nav_search" android:scaleType="centerInside" />
+    <com.astuetz.PagerSlidingTabStrip android:id="@id/explore_tab" android:layout_width="wrap_content" android:layout_height="@dimen/top_tab_height" android:layout_centerHorizontal="true" app:pstsIndicatorColor="@color/explore_tab_selected" app:pstsDividerColor="@color/transparent" app:pstsIndicatorHeight="2.0dip" app:pstsUnderlineHeight="0.0dip" app:pstsTabPaddingLeftRight="12.0dip" app:pstsShouldExpand="false" app:pstsTextSize="17.0dip" app:pstsTextStyle="0" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageView android:id="@id/explore_finduser_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/nav_addfr" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffb0b0b0" android:layout_width="82.0dip" android:layout_height="1.0px" />
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ffb0b0b0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="使用其他登录方式" />
+        <View android:background="#ffb0b0b0" android:layout_width="82.0dip" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+        <Button android:id="@id/goto_weibo_btn" android:background="@drawable/login_weibo_icon_selector" android:layout_width="46.0dip" android:layout_height="46.0dip" />
+        <Button android:id="@id/goto_weixin_btn" android:background="@drawable/login_weixin_icon_selector" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="39.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/replay_comment_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/replay_fragment" android:background="#eeffffff" android:paddingBottom="45.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="350.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/replay_comment_top" android:layout_width="fill_parent" android:layout_height="34.0dip">
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="#ff919191" android:id="@id/replay_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="点评" android:layout_centerVertical="true" />
+            <FrameLayout android:id="@id/replay_comment_refresh" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/packup" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:background="@drawable/replay_comment_refresh" android:layout_width="12.0dip" android:layout_height="11.0dip" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/packup" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:background="@drawable/replay_packup" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/replay_comment_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:background="@drawable/replay_comment_empty" android:layout_width="111.0dip" android:layout_height="111.0dip" />
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="还没有人点评，快来抢沙发吧~" />
+        </LinearLayout>
+        <com.huajiao.views.common.ViewItemLoading android:id="@id/replay_comment_loading" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+        <com.huajiao.views.listview.RefreshListView android:id="@id/replay_comment_list" android:background="@color/main_content_bg_new" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/alpha10_white" android:dividerHeight="0.100000024dip" android:layout_below="@id/replay_comment_top" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/replay_comment_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:background="@drawable/replay_network" android:layout_width="74.0dip" android:layout_height="56.0dip" />
+            <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="@color/color_T3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="当前网络不可用，请稍后重试" />
+            <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="@color/user_color_17" android:gravity="center" android:id="@id/replay_comment_btn_retry" android:background="@drawable/btn_replay_comment_retry_bg" android:layout_width="120.0dip" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:text="刷新重试" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

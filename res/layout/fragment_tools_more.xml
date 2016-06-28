@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main_tools_more" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="45.0dip" android:layout_height="90.0dip" android:layout_marginLeft="57.0dip" android:layout_marginBottom="55.0dip" android:layout_alignParentBottom="true">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_hide_comment" android:background="@drawable/btn_live_showdanmaku_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_reverse" android:background="@drawable/btn_live_reverse_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

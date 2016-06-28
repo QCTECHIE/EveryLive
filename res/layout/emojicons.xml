@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/color_B2" android:layout_width="fill_parent" android:layout_height="@dimen/emojicon_pager_height_replay"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/emoji_pager" android:layout_width="fill_parent" android:layout_height="@dimen/emojicon_pager_height" android:layout_marginLeft="6.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="15.0dip" />
+    <com.huajiao.views.emojiedit.ViewpagerIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginBottom="-15.0dip" android:layout_alignBottom="@id/emoji_pager" />
+    <HorizontalScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/liner_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+</merge>

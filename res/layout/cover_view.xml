@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover_bg_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/skip" android:background="@drawable/cover_skip_bg" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="跳过" android:layout_alignParentRight="true" />
+    <pl.droidsonroids.gif.GifImageView android:id="@id/gif" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="centerCrop" />
+</RelativeLayout>

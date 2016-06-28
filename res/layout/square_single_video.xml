@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.main.home.view.FeedTopComponent android:id="@id/feed_video_top" android:layout_width="fill_parent" android:layout_height="@dimen/feed_top_component_height" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/feed_video_cover_view" android:layout_width="fill_parent" android:layout_height="@dimen/feed_video_bg_height" android:scaleType="centerCrop" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+        <View android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/feed_video_cover_view" android:layout_alignBottom="@id/feed_video_cover_view" />
+        <ImageView android:id="@id/feed_video_btn_play" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/play_video_normal" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/explore_tag_video_big" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <include layout="@layout/list_adapter_divider_view" />
+</LinearLayout>

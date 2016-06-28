@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tuhao_cloud" android:background="@drawable/tuhao_cloud" android:visibility="invisible" android:layout_width="750.0px" android:layout_height="250.0px" />
+    <View android:id="@id/tuhao_cloud2" android:background="@drawable/tuhao_cloud" android:visibility="invisible" android:layout_width="750.0px" android:layout_height="250.0px" />
+    <View android:id="@id/tuhao_building" android:background="@drawable/tuhao_building" android:visibility="invisible" android:layout_width="750.0px" android:layout_height="251.0px" />
+    <View android:id="@id/tuhao_building2" android:background="@drawable/tuhao_building" android:visibility="invisible" android:layout_width="750.0px" android:layout_height="251.0px" />
+    <View android:id="@id/tuhao_tiaofu" android:background="@drawable/tiaofu_clip" android:visibility="invisible" android:layout_width="128.0px" android:layout_height="360.0px" />
+    <View android:id="@id/tuhao_juanzhou" android:background="@drawable/tiaofu_juanzhou" android:visibility="invisible" android:layout_width="128.0px" android:layout_height="30.0px" />
+    <View android:id="@id/tuhao_plane" android:background="@drawable/tuhao_plane" android:visibility="invisible" android:layout_width="718.0px" android:layout_height="257.0px" />
+    <include android:layout_width="wrap_content" android:layout_height="24.0dip" layout="@layout/effect_title_view" />
+</merge>

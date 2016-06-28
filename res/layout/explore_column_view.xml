@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SimpleDraweeView android:id="@id/cover_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/main_def_bg" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/explore_level_icon_middle" android:layout_alignTop="@id/cover_image" android:layout_alignRight="@id/cover_image" />
+    <com.huajiao.views.TextViewWithBlodFont android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/watch_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="1000人正在观看" android:shadowColor="#cc000000" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="1.07" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/nickname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:text="美女主播" android:maxLength="8" />
+</merge>

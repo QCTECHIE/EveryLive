@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/pop_bg_ban" android:layout_width="329.0dip" android:layout_height="161.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TextViewWithFont android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/dlg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="余额不足" android:layout_centerHorizontal="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dlg_ok" android:layout_width="150.0dip" android:layout_height="43.0dip" android:layout_marginLeft="0.0dip" android:layout_marginBottom="0.0dip" android:text="充值" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dlg_cancle" android:layout_width="150.0dip" android:layout_height="43.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dlg_title0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="当前余额不足，充值才可以继续送礼物，是否去充值" android:layout_above="@id/dlg_ok" android:layout_below="@id/dlg_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

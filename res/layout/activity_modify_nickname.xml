@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/edit_userinfo_username_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huajiao.views.EditTextWithFont android:ellipsize="end" android:gravity="center|left" android:id="@id/edit_userinfo_username_edittext" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="40.0dip" android:maxLength="20" android:layout_weight="1.0" android:textCursorDrawable="@null" style="@style/text_style_grey_normal_new" />
+        <ImageView android:id="@id/del_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_closed" />
+    </LinearLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

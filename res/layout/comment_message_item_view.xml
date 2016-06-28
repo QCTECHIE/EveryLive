@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="119.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="57.0dip">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/auchor_iv" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" app:riv_border_width="2.0dip" app:riv_border_color="@color/color_white_alpha_60" app:riv_oval="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff434343" android:id="@id/nickname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小蜜蜂" />
+                    <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff424242" android:id="@id/comment_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:text="太好看了。太棒了！！！！！圣诞快乐见阿克苏的健康拉动绿卡顺路快递" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.huajiao.views.TextViewWithFont android:textSize="10.0dip" android:textColor="#ff8c8c8c" android:id="@id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="一分钟前" />
+                    <com.huajiao.views.TextViewWithBlodFont android:textSize="12.0dip" android:textColor="#ff42b0f5" android:id="@id/replay_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="回复" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="9.0dip" />
+        <RelativeLayout android:id="@id/feed_layout" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minHeight="62.0dip">
+            <ImageView android:id="@id/content_left_iv" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/main_def_bg" android:scaleType="centerCrop" />
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff434343" android:id="@id/content_nickname_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="木子李" android:singleLine="true" android:layout_toRightOf="@id/content_left_iv" />
+            <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff434343" android:id="@id/content_comment_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="今天天气不错，出来聊聊啊" android:layout_toRightOf="@id/content_left_iv" android:layout_below="@id/content_nickname_tv" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</LinearLayout>

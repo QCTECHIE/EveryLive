@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:screenOrientation="sensorLandscape" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.paranomicplayer.IjkplayerWheadt.IjkVideoView android:id="@id/wheadtview" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_screenShot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_enterbg2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/enter_bg_360player" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iv_errortoast2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/errortoast" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/endplay_prompt2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/endplay" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_close2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/iv_errortoast3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_errortoast_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/errortoast" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_errortoast_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/errortoast" android:layout_weight="1.0" android:layout_alignTop="@id/iv_errorloading_left" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/iv_errorloading2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_errorloading_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_enter_wait" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_errorloading_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_enter_wait" android:layout_weight="1.0" android:layout_alignTop="@id/iv_errorloading_left" />
+    </LinearLayout>
+    <include layout="@layout/layout_changeto_wheadt" />
+    <include layout="@layout/layout_changeto_vr" />
+</FrameLayout>

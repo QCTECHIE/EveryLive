@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="2.0dip" android:layout_height="70.0dip" />
+    <ImageView android:id="@id/rank_medal_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/rank_medal_level" android:layout_centerVertical="true" />
+    <com.huajiao.views.TextViewWithBlodFont android:textSize="14.0dip" android:textColor="#ff2f2f2f" android:gravity="center" android:id="@id/rank_number" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@id/ranking_item_avatar" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="48.0dip" android:src="@drawable/head_default" android:layout_centerVertical="true" app:riv_oval="true" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ranking_item_avatar" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="13.0dip" android:textColor="#ff101010" android:id="@id/ranking_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" />
+            <ImageView android:id="@id/rank_trand_flat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rank_trand_flat" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rank_trand_change" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/rank_change_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rank_change_selector" />
+                <com.huajiao.views.TextViewWithBlodFont android:textSize="12.0dip" android:textColor="@drawable/rank_num_selector" android:id="@id/rank_change_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="10.0dip" android:textColor="#ff2c2c2c" android:id="@id/ranking_user_credentials" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:singleLine="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="9.0dip" android:textColor="#ff1f1f1f" android:id="@id/ranking_praises_received" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" />
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

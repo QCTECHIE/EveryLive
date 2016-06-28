@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cover_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/main_def_bg" fresco:placeholderImageScaleType="centerCrop" fresco:actualImageScaleType="centerCrop" />
+    <ImageView android:id="@id/type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/explore_level_icon" android:layout_alignTop="@id/cover_image" android:layout_alignRight="@id/cover_image" />
+    <com.huajiao.views.TextViewWithFont android:id="@id/replay_watch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</merge>

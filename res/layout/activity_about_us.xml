@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="210.0dip">
+        <ImageView android:id="@id/debug_icon" android:background="@drawable/logo180" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <com.huajiao.views.TextViewWithFont android:textSize="30.0sp" android:textColor="@color/color_L3" android:gravity="center" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/app_name" />
+    </LinearLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/layout_update" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="onClickUpdate">
+        <com.huajiao.views.TextViewWithFont android:text="检查更新" style="@style/tv_user_center_item" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="@color/color_red" android:gravity="center" android:id="@id/icon_update" android:background="@drawable/update_about_icon_bg" android:layout_width="50.0dip" android:layout_height="20.0dip" android:layout_marginRight="30.0dip" android:text="有新版" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/layout_agreement" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="onClickAgreenListener">
+        <com.huajiao.views.TextViewWithFont android:text="用户协议" style="@style/tv_user_center_item" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/layout_gowebsite" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="onClickGoWebSiteListener">
+        <com.huajiao.views.TextViewWithFont android:text="去官网" style="@style/tv_user_center_item" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/layout_logmode" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="onClickGoLogListener">
+        <com.huajiao.views.TextViewWithFont android:text="日志模式" style="@style/tv_user_center_item" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.huajiao.views.TextViewWithFont android:layout_gravity="center_horizontal" android:id="@id/tv_vesition" android:paddingTop="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" style="@style/text_style_grey_larger" />
+</LinearLayout>

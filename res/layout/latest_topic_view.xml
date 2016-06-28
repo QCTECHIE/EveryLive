@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="131.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/topic_latest_item_height">
+        <com.huajiao.main.explore.view.TopicViewItem android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topic_item_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:layout_height="fill_parent" style="@style/topic_vertical_line" />
+        <com.huajiao.main.explore.view.TopicViewItem android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topic_item_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="1.0px">
+        <View style="@style/topic_horizontal_line" />
+        <View style="@style/topic_horizontal_line" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/topic_latest_item_height">
+        <com.huajiao.main.explore.view.TopicViewItem android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topic_item_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:layout_height="fill_parent" style="@style/topic_vertical_line" />
+        <com.huajiao.main.explore.view.TopicViewItem android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topic_item_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="1.0px">
+        <View style="@style/topic_horizontal_line" />
+        <View style="@style/topic_horizontal_line" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/topic_latest_item_height">
+        <com.huajiao.main.explore.view.TopicViewItem android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topic_item_5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:layout_height="fill_parent" style="@style/topic_vertical_line" />
+        <TextView android:id="@id/topic_text_more" android:paddingRight="22.0dip" android:layout_height="fill_parent" android:text="更多话题" style="@style/topic_latest_text" />
+    </LinearLayout>
+</LinearLayout>

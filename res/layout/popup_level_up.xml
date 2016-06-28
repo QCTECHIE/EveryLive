@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_container" android:background="@drawable/bg_popup_level_up" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_level_up_margin_left_right" android:layout_marginRight="@dimen/popup_level_up_margin_left_right" android:minHeight="200.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.huajiao.views.RoundedImageView android:id="@id/img_top_bg" android:background="@drawable/ic_popup_level_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" fresco:roundAsCircle="false" fresco:roundedCornerRadius="6.0dip" fresco:roundTopLeft="true" fresco:roundTopRight="true" fresco:roundBottomRight="false" fresco:roundBottomLeft="false" fresco:roundWithOverlayColor="#ffffffff" />
+            <TextView android:textSize="44.0sp" android:textColor="#ffffffff" android:id="@id/tv_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Level 40" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="-恭喜-" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="您已经达到40级，击败了\n50%的用户！" />
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="30.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_view_detail" android:background="@drawable/round6_black_btn_bg_normal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="查看等级详情" />
+        <Button android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/btn_close" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="16.0dip" android:text="关闭" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/layout_incom_main" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_huajiaodou" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/live_huajiaodou" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#fffce473" android:id="@id/text_huajiao_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" style="@style/live_top_text_style" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/incom_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="0" android:layout_centerVertical="true" style="@style/live_top_text_style" />
+    <ImageView android:id="@id/income_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/income_right" android:layout_toRightOf="@id/incom_num" android:layout_centerVertical="true" />
+</merge>

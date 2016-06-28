@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="360.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <RelativeLayout android:id="@id/layout_top" android:background="@drawable/bg_auth_top" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <RelativeLayout android:id="@id/layout_close" android:background="@drawable/bg_auth_btn_close" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true">
+                <com.huajiao.views.TextViewWithFont android:id="@id/top_tv_close" android:background="@drawable/btn_live_close_selector" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <com.huajiao.views.TextViewWithFont android:textSize="24.5sp" android:textColor="#ff434343" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:text="开启直播遇到了问题 " android:layout_centerHorizontal="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/inst" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:text="手机的摄像功能无法开启，可能是手机自带的安全功能阻止了花椒开启手机摄像机，需要您帮助花椒解决。" android:layout_below="@id/title" android:lineSpacingMultiplier="1.2" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_bottom" android:background="@drawable/bg_auth_bottom" android:layout_width="fill_parent" android:layout_height="230.0dip" android:layout_below="@id/layout_top">
+            <View android:id="@id/line_space" android:background="@color/alpha18_black" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_bottom_descrip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/line_space" android:layout_centerHorizontal="true">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff434343" android:gravity="left" android:id="@id/descrip_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="解决方法 " android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff434343" android:gravity="left" android:id="@id/descrip_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="1.请打开手机的系统设置 " android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff434343" android:gravity="left" android:id="@id/descrip_third" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="2.找到权限管理，选择应用程序的管理菜单" android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff434343" android:gravity="left" android:id="@id/descrip_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="3.将花椒设置为信任的应用程序" android:singleLine="true" />
+            </LinearLayout>
+            <Button android:textColor="@color/color_white" android:id="@id/dlg_ok" android:background="@drawable/btn_bg_living_end" android:layout_width="260.0dip" android:layout_height="45.0dip" android:layout_marginTop="40.0dip" android:text="知道了" android:layout_below="@id/layout_bottom_descrip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/icon" android:layout_width="83.29999dip" android:layout_height="102.899994dip" android:src="@drawable/camera_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

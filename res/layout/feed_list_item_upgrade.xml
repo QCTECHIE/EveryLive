@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.main.home.view.FeedTopComponent android:id="@id/feed_upgrade_top" android:layout_width="fill_parent" android:layout_height="@dimen/feed_top_component_height" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/feed_upgrade_cover_view" android:layout_width="fill_parent" android:layout_height="150.0dip" fresco:placeholderImage="@drawable/feed_upgrade_bg_big" fresco:placeholderImageScaleType="centerCrop" />
+    <include layout="@layout/list_adapter_divider_view" />
+</LinearLayout>

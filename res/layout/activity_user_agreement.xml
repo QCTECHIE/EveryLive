@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_B2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.huajiao.views.CommonWebView android:id="@id/user_agreen_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include android:id="@id/activity_webview_loading" android:visibility="gone" layout="@layout/common_loading_view" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.listview.RefreshListView android:id="@id/list_view" android:background="@color/layer_color_3" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    <include android:id="@id/focus_network_error_view" layout="@layout/common_error_view" />
+    <include android:id="@id/focus_loading_view" layout="@layout/common_loading_view" />
+    <include android:id="@id/focus_empty_view" layout="@layout/list_empty_layout" />
+    <ProgressBar android:id="@id/progress_loading" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</FrameLayout>

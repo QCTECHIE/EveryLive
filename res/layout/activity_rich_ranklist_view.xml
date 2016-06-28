@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:id="@id/top_tips_ll" android:background="#ffd8ecf4" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="#ff1470ab" android:id="@id/top_tips_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="以下含旧版经验礼物和新版全部礼物经验" android:drawableLeft="@drawable/rich_rank_list_ring_icon" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.listview.RefreshListView android:id="@id/list_view" android:background="@color/layer_color_3" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+        <include android:id="@id/focus_network_error_view" layout="@layout/common_error_view" />
+        <include android:id="@id/focus_loading_view" layout="@layout/common_loading_view" />
+        <include android:id="@id/focus_empty_view" layout="@layout/focus_empty_layout" />
+        <ProgressBar android:id="@id/progress_loading" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+    </RelativeLayout>
+</LinearLayout>

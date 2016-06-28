@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/xiongche_weiyan" android:background="@drawable/xiongche_weiyan" android:visibility="invisible" android:layout_width="364.0dip" android:layout_height="202.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="200.0dip" />
+    <View android:id="@id/xiongche_weixin" android:background="@drawable/xiongche_weixin" android:visibility="invisible" android:layout_width="183.0dip" android:layout_height="168.0dip" android:layout_marginLeft="150.0dip" android:layout_marginTop="120.0dip" />
+    <RelativeLayout android:id="@id/xiongche" android:paddingLeft="70.0dip" android:paddingTop="20.0dip" android:visibility="invisible" android:clipToPadding="false" android:layout_width="400.0dip" android:layout_height="wrap_content" android:layout_marginTop="200.0dip">
+        <View android:id="@id/xiongche_in" android:background="@drawable/xiongche_in" android:layout_width="257.0dip" android:layout_height="159.0dip" />
+        <View android:id="@id/xiongche_light" android:background="@drawable/xiongche_light" android:visibility="invisible" android:layout_width="194.0dip" android:layout_height="81.0dip" />
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="24.0dip" layout="@layout/effect_title_view" />
+</merge>

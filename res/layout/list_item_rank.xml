@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_list_item_ranking_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/img_rank_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/rank_medal_level" android:layout_centerVertical="true" />
+        <com.huajiao.views.TextViewWithBlodFont android:textSize="14.0dip" android:textColor="#ff7c7c7c" android:gravity="center" android:id="@id/text_rank_number" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.huajiao.views.RoundedImageView android:id="@id/img_header" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="48.0dip" android:layout_centerVertical="true" fresco:placeholderImage="@drawable/head_default" fresco:failureImage="@drawable/head_default" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/layer_color_5" />
+        <ImageView android:id="@id/arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/rank_list_item_followed_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/focus_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/rank_list_item_follow_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/layout_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_centerVertical="true">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/list_like" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/tv_rank_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="273311" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/layout_praise" android:layout_toRightOf="@id/img_header" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huajiao.views.UserLevelView android:id="@id/user_level_view" android:layout_marginLeft="0.0dip" style="@style/small_level_style" />
+                <TextView android:textSize="13.0dip" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="greenle" android:maxLines="1" android:maxEms="10" />
+            </LinearLayout>
+            <TextView android:textSize="11.0dip" android:textColor="#ff606060" android:ellipsize="end" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="273311" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="5.0dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

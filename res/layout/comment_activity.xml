@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/replay_comment_root" android:background="@color/alpha99_comment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_color_3" android:gravity="center" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="没有更多评论了~" />
+    <com.huajiao.views.common.ViewItemLoading android:id="@id/replay_comment_loading" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/replay_fragment" android:paddingBottom="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/actionbar_view_layout">
+        <com.huajiao.views.listview.RefreshListView android:id="@id/replay_comment_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/layer_color_5" android:dividerHeight="1.0px" />
+    </RelativeLayout>
+    <com.huajiao.views.emojiedit.EditFragment android:id="@id/frag_emojiedit" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@id/img_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" app:riv_border_width="1.0dip" app:riv_border_color="@color/color_white" app:riv_oval="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/text_color_5" android:id="@id/text_host_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:maxWidth="90.0dip" android:minWidth="40.0dip" android:text="花椒直播" android:singleLine="true" android:layout_toRightOf="@id/img_icon" style="@style/live_top_text_style" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/text_color_5" android:gravity="center" android:id="@id/text_host_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:minWidth="30.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/img_icon" android:layout_below="@id/text_host_icon" android:layout_alignLeft="@id/text_host_icon" style="@style/live_top_text_style" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/text_host_follow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/text_host_icon" android:layout_centerVertical="true">
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:gravity="center" android:background="@drawable/live_follow_selector" android:layout_width="43.0dip" android:layout_height="23.0dip" android:singleLine="true" />
+    </LinearLayout>
+</merge>

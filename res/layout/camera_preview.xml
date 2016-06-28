@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.live.MyNoScrollView android:id="@id/scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.huajiao.views.live.MyNoScrollHorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextureView android:id="@id/textureview_preview_camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </com.huajiao.views.live.MyNoScrollHorizontalScrollView>
+    </com.huajiao.views.live.MyNoScrollView>
+</LinearLayout>

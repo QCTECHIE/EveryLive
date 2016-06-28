@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/resenddialog_layout" android:background="@drawable/dialogresend_back" android:paddingRight="35.0dip" android:paddingBottom="26.0dip" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/resenddialog_text_content" android:paddingLeft="18.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="重发该消息?" />
+    <Button android:textSize="15.0sp" android:textColor="#ff546792" android:id="@id/resenddialog_cancle" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:text="取消" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <Button android:textSize="15.0sp" android:textColor="#ff546792" android:id="@id/resenddialog_right" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重发" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_no_focus" />
+        <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="#ff999999" android:id="@id/jump_follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:text="@string/no_focus_tips" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/jump_follow_btn" android:background="@drawable/jump_focus_bg" android:layout_width="216.0dip" android:layout_height="43.0dip" android:layout_marginTop="57.0dip" android:text="@string/no_focus_action" />
+    </LinearLayout>
+</RelativeLayout>

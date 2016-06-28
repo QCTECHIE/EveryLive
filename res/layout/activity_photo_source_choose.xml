@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_bg" android:background="#a0000000" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.MenuRelativeLayout android:id="@id/layout_menu" android:layout_width="fill_parent" android:layout_height="158.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_popmenu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/layout_camera" android:background="@drawable/btn_create_menu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ffd55648" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍照" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#ffbebfc2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/layout_pick" android:background="@drawable/btn_create_menu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ffd55648" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本地相册" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#00999999" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <RelativeLayout android:id="@id/layout_cancel" android:background="@drawable/btn_create_menu" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff45464d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.huajiao.views.MenuRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_content_bg_new" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/layer_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_height">
+        <ImageView android:id="@id/live_search_btn" android:layout_width="@dimen/top_tab_height" android:layout_height="@dimen/top_tab_height" android:src="@drawable/ic_tab_search_line" android:scaleType="centerInside" />
+        <com.astuetz.PagerSlidingTabStrip android:id="@id/explore_tab" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_height" app:pstsIndicatorColor="@color/explore_tab_selected" app:pstsDividerColor="@color/transparent" app:pstsIndicatorHeight="2.0dip" app:pstsUnderlineHeight="0.0dip" app:pstsTabPaddingLeftRight="12.0dip" app:pstsShouldExpand="false" app:pstsTextSize="17.0dip" app:pstsTextStyle="0" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/explore_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

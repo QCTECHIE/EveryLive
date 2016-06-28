@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.TopBarView android:id="@id/topbar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/login_edit_white_round_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="38.0dip" android:layout_marginRight="17.0dip">
+            <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:textColorHint="#ffdedede" android:id="@id/pwd_et" android:background="@null" android:layout_width="0.0dip" android:layout_height="39.0dip" android:layout_marginLeft="20.0dip" android:hint="请设置登录密码" android:cursorVisible="true" android:password="true" android:maxLength="16" android:layout_weight="1.0" android:inputType="textPassword" android:textCursorDrawable="@drawable/cursor" />
+            <ImageView android:id="@id/pwd_visible_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="13.0dip" android:src="@drawable/eye_on" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textColor="#ff34aff3" android:id="@id/pwd_safey_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="12.0dip" android:text="@string/next_time_use_new_acount_login_text" />
+        <com.huajiao.views.ButtonWithFont android:enabled="false" android:textSize="16.0dip" android:textColor="@drawable/login_btn_state_text_color" android:id="@id/complete_btn" android:background="@drawable/login_btn_state_bg" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="34.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="5.0dip" android:text="完成" />
+    </LinearLayout>
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/black_bg_loading_view" />
+</FrameLayout>

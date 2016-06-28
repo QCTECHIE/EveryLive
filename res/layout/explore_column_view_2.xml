@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SimpleDraweeView android:id="@id/cover_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/main_def_bg" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/explore_level_icon_middle" android:layout_alignTop="@id/cover_image" android:layout_alignRight="@id/cover_image" />
+    <com.huajiao.views.TextViewWithBlodFont android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/nickname" android:background="@drawable/explore_nickname_bg" android:paddingLeft="8.0dip" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="8.0dip" android:text="美女主播" android:maxLength="8" android:drawableLeft="@drawable/explore_nickname_prefix" android:drawablePadding="2.0dip" android:layout_alignParentBottom="true" />
+</merge>

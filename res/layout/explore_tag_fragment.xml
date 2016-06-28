@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/error_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_error_view" />
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_loading_view" />
+    <RelativeLayout android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_no_focus" />
+            <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="#ff999999" android:id="@id/jump_follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:text="@string/no_focus_tips" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.huajiao.views.listview.RefreshListView android:id="@id/listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/main_tab_height" android:listSelector="@color/color_alphe" android:divider="@null" app:show_tips="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ProgressBar android:id="@id/progress_loading" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</FrameLayout>

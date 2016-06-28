@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TextViewWithBlodFont android:textSize="30.0dip" android:textColor="@color/text_color_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="直播结束" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.huajiao.views.LightTextView android:textSize="26.0sp" android:textColor="#ffffffff" android:id="@id/tv_watch_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0sp" android:textColor="@color/alpha50_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="观看人数" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+            <com.huajiao.views.LightTextView android:textSize="26.0sp" android:textColor="#ffffffff" android:id="@id/tv_finish_auchor_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:singleLine="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0sp" android:textColor="@color/alpha50_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="播放时长" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+            <com.huajiao.views.LightTextView android:textSize="26.0sp" android:textColor="#ffffffff" android:id="@id/tv_praise_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0sp" android:textColor="@color/alpha50_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="喜欢人数" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_photo_share_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="更多精彩瞬间截图都已经保存到了本地" android:maxLines="1" />
+    <com.huajiao.views.MyNoScrollListView android:id="@id/gridview" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gridview_padding_left_right" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/gridview_padding_left_right" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    <View android:id="@id/view_empty" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="#ff2d2d2d" android:gravity="center" android:id="@id/tv_share" android:background="@drawable/round4_white_btn_bg_selector" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/gridview_padding_left_right" android:layout_marginTop="30.0dip" android:layout_marginRight="@dimen/gridview_padding_left_right" android:text="分享精彩瞬间" />
+    <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_close" android:background="@drawable/live_finish__sure_btn" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/gridview_padding_left_right" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/gridview_padding_left_right" android:layout_marginBottom="10.0dip" android:text="关闭" />
+</merge>

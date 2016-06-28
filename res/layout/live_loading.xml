@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_layout" android:background="@drawable/live_loading_bg" android:layout_width="320.0dip" android:layout_height="320.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/loading_image" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请稍候..." android:singleLine="true" android:shadowColor="@color/color_T4" android:shadowDx="0.4" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+</merge>

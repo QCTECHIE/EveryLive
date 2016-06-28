@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.listview.RefreshListView android:id="@id/rank_list_view" android:background="@color/layer_color_3" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    <include android:id="@id/rank_network_error_view" layout="@layout/common_error_view" />
+    <include android:id="@id/rank_loading_view" layout="@layout/common_loading_view" />
+    <include android:id="@id/rank_empty_view" layout="@layout/list_empty_layout" />
+</RelativeLayout>

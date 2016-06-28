@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/redbag_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huajiao.views.TextViewWithBlodFont android:textSize="60.0dip" android:textColor="#ffffffff" android:id="@id/money_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="0" android:layout_centerHorizontal="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:text="花椒豆" android:layout_toRightOf="@id/money_num_tv" android:layout_alignBaseline="@id/money_num_tv" />
+        <com.huajiao.views.ButtonWithFont android:textSize="15.0dip" android:textColor="#ffffe154" android:id="@id/withdraw_btn" android:background="@drawable/round15_yellow_border_btn_bg_selector" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:text="提现" android:layout_below="@id/money_num_tv" android:layout_centerHorizontal="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/desc_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/invite_friends_get_redpacket_desc_text" android:maxLines="2" android:layout_below="@id/withdraw_btn" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/layer_color_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/invite_tip_bg" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_friends_redpacket_code_text" />
+            <com.huajiao.views.TextViewWithFont android:textSize="20.0dip" android:textColor="#ff000000" android:id="@id/invite_code_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="\ 202923344081" android:singleLine="true" />
+            <LinearLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.huajiao.views.ButtonWithFont android:textSize="13.0dip" android:textColor="#ffef5350" android:id="@id/copy_code_btn" android:background="@drawable/round12_red_border_btn_bg_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="复制口令" />
+                <com.huajiao.views.ButtonWithFont android:textSize="13.0dip" android:textColor="#ffef5350" android:id="@id/share_code_btn" android:background="@drawable/round12_red_border_btn_bg_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:text="分享口令" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ff000000" android:id="@id/share_desc_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="将您的邀请暗号分享至" />
+        <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:id="@id/wx_circle" android:text="@string/share_title_wxgroup" android:drawableTop="@drawable/ic_share_wxgroup" style="@style/share_dialog_text" />
+            <TextView android:id="@id/wx" android:text="@string/share_title_wx" android:drawableTop="@drawable/ic_share_wx" style="@style/share_dialog_text" />
+            <TextView android:id="@id/weibo_share" android:text="@string/share_title_weibo" android:drawableTop="@drawable/ic_share_weibo" style="@style/share_dialog_text" />
+            <TextView android:id="@id/qqzone" android:text="@string/share_title_qzone" android:drawableTop="@drawable/ic_share_qzone" style="@style/share_dialog_text" />
+            <TextView android:id="@id/qq" android:text="@string/share_title_qq" android:drawableTop="@drawable/ic_share_qq" style="@style/share_dialog_text" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/invite_friends_count_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/invite_friends_count_text" />
+    </LinearLayout>
+</LinearLayout>

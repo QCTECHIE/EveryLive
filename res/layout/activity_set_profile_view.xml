@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.TopBarView android:id="@id/topbar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="38.0dip">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/auchor_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/head_default" android:scaleType="centerCrop" app:riv_border_width="2.0dip" app:riv_border_color="@color/color_white_alpha_60" app:riv_oval="true" />
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/small_camera_icon" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip">
+            <com.huajiao.views.EditTextWithFont android:textSize="14.0dip" android:textColor="#ff333333" android:textColorHint="#ffcecece" android:id="@id/nickname_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:hint="设置一个昵称吧" android:cursorVisible="true" android:maxLength="20" android:textCursorDrawable="@drawable/cursor" />
+            <View android:background="#ffcfcfcf" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#fffe0000" android:id="@id/error_hint_tv" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="该昵称已经被占用" />
+        <com.huajiao.views.ButtonWithFont android:enabled="false" android:textSize="16.0dip" android:textColor="@drawable/login_btn_state_text_color" android:id="@id/next_btn" android:background="@drawable/login_btn_state_bg" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="20.0dip" android:text="下一步" />
+        <LinearLayout android:gravity="center" android:id="@id/agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickAgreenListener">
+            <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff9f9f9f" android:id="@id/agreement1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册即表示您同意" />
+            <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff34aff3" android:id="@id/agreement2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《花椒用户协议》" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/black_bg_loading_view" />
+</FrameLayout>

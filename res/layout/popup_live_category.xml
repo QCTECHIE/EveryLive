@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pop_grid_view_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:id="@id/live_catalog_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="0.8000001dip" android:verticalSpacing="0.8000001dip" android:numColumns="4" android:choiceMode="singleChoice" />
+    <View android:background="@drawable/popup_dropdown_top_sp" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_alignParentTop="true" />
+</RelativeLayout>

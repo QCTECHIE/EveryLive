@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/login_reg_bg" android:scaleType="centerCrop" />
+    <LinearLayout android:id="@id/close_layout" android:paddingLeft="20.0dip" android:paddingTop="17.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onClickClose">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_close" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/bottom_layout" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="14.0dip" android:layout_alignParentBottom="true">
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用其他方式" />
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ffffffff" android:id="@id/enter_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/center_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_layout">
+        <LinearLayout android:gravity="center" android:id="@id/goto_qq_layout" android:background="@drawable/round4_white_border_btn_bg_selector" android:layout_width="300.0dip" android:layout_height="50.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="wrap_content" android:src="@drawable/login_reg_qq_icon_selector" />
+            <com.huajiao.views.TextViewWithFont android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text=" QQ" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/goto_weixin_layout" android:background="@drawable/round4_white_border_btn_bg_selector" android:layout_width="300.0dip" android:layout_height="50.0dip" android:layout_marginTop="18.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="wrap_content" android:src="@drawable/login_reg_weixin_icon_selector" />
+            <com.huajiao.views.TextViewWithFont android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="微信" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/goto_weibo_layout" android:background="@drawable/round4_white_border_btn_bg_selector" android:layout_width="300.0dip" android:layout_height="50.0dip" android:layout_marginTop="18.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="wrap_content" android:src="@drawable/login_reg_weibo_icon_selector" />
+            <com.huajiao.views.TextViewWithFont android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/goto_weibo_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="微博" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/goto_qihoo_layout" android:background="@drawable/round4_white_border_btn_bg_selector" android:layout_width="300.0dip" android:layout_height="50.0dip" android:layout_marginTop="18.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="wrap_content" android:src="@drawable/login_reg_qihoo_icon_selector" />
+            <com.huajiao.views.TextViewWithFont android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/goto_qihoo_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="360" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rank_detail_banner_layout" android:layout_width="fill_parent" android:layout_height="@dimen/rank_detail_header_banner_height">
+        <ImageView android:id="@id/rank_detail_header_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rank_banner_mask" android:scaleType="centerCrop" />
+        <View android:background="@drawable/rank_banner_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rank_king" />
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/rank_king_image" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" app:riv_border_width="2.0dip" app:riv_border_color="@color/color_white_alpha_60" app:riv_oval="true" />
+            <com.huajiao.views.TextViewWithBlodFont android:id="@id/rank_king_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@style/text_style_white_larger" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff2b2b2b" android:id="@id/rank_detail_intro" android:background="#ffffffff" android:paddingLeft="20.0dip" android:paddingTop="30.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/rank_detail_intro_height" android:layout_below="@id/rank_detail_banner_layout" />
+    <ImageView android:id="@id/rank_detail_ribbon_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-21.0dip" android:src="@drawable/rank_detail_ribbon" android:layout_alignBottom="@id/rank_detail_banner_layout" android:layout_centerHorizontal="true" />
+    <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_below="@id/rank_detail_intro" />
+</RelativeLayout>

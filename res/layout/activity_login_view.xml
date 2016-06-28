@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.TopBarView android:id="@id/topbar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/login_edit_white_round_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="38.0dip" android:layout_marginRight="17.0dip">
+            <com.huajiao.views.EditTextWithFont android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:textColorHint="#ffdedede" android:id="@id/mobile_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="20.0dip" android:hint="请输入手机号" android:cursorVisible="true" android:maxLength="11" android:inputType="number" android:textCursorDrawable="@drawable/cursor" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/login_edit_white_round_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="17.0dip">
+            <EditText android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:textColorHint="#ffdedede" android:id="@id/pwd_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="20.0dip" android:hint="请输入登录密码" android:cursorVisible="true" android:password="true" android:maxLength="16" android:inputType="textPassword" android:textCursorDrawable="@drawable/cursor" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/code_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="17.0dip">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/login_edit_white_round_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huajiao.views.EditTextWithFont android:textSize="14.0dip" android:textColor="#ff4b4b4b" android:textColorHint="#ffdedede" android:id="@id/code_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="20.0dip" android:hint="请输入右侧字符" android:cursorVisible="true" android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+            <ImageView android:id="@id/code_iv" android:background="@drawable/white_rect_bg" android:layout_width="82.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/refresh_code_iv" android:background="@drawable/refresh_code_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:scaleType="center" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff333333" android:layout_gravity="right" android:id="@id/forget_pwd_tv" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忘记密码？" />
+        <com.huajiao.views.ButtonWithFont android:enabled="false" android:textSize="16.0dip" android:textColor="@drawable/login_btn_state_text_color" android:id="@id/login_btn" android:background="@drawable/login_btn_state_bg" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="5.0dip" android:text="登录" />
+        <com.huajiao.views.TextViewWithFont android:textColor="#ff34aff3" android:layout_gravity="center" android:id="@id/sms_login_tv" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短信验证码登录" />
+        <include android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="20.0dip" layout="@layout/sso_login_layout" />
+    </LinearLayout>
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/black_bg_loading_view" />
+</FrameLayout>

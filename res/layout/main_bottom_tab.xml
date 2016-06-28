@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.main.MainTabItemView android:id="@id/bottom_tab_find" style="@style/bottom_tab_item_style">
+        <TextView android:id="@id/tab_find_tv" android:text="" android:drawableTop="@drawable/bottom_tab_item_find_selector" style="@style/bottom_tab_text_style" />
+    </com.huajiao.main.MainTabItemView>
+    <com.huajiao.main.MainTabItemView android:id="@id/bottom_tab_home" style="@style/bottom_tab_item_style">
+        <TextView android:id="@id/tab_home_tv" android:text="" android:drawableTop="@drawable/bottom_tab_item_home_selector" style="@style/bottom_tab_text_style" />
+    </com.huajiao.main.MainTabItemView>
+    <RelativeLayout android:background="@color/tab_live_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/bottom_tab_play" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/tab_logo" android:scaleType="center" android:layout_weight="1.0" />
+    </RelativeLayout>
+    <com.huajiao.main.MainTabItemView android:id="@id/bottom_tab_hot" style="@style/bottom_tab_item_style">
+        <TextView android:id="@id/tab_hot_tv" android:text="" android:drawableTop="@drawable/bottom_tab_item_hot_selector" style="@style/bottom_tab_text_style" />
+        <ImageView android:id="@id/bottom_tab_msg_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_msg_circle_indicator" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_tab__unread_num" android:background="@drawable/ic_unread_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="18.0dip" android:text="2" android:maxLines="1" android:layout_alignParentRight="true" />
+    </com.huajiao.main.MainTabItemView>
+    <com.huajiao.main.MainTabItemView android:id="@id/bottom_tab_user" style="@style/bottom_tab_item_style">
+        <TextView android:id="@id/tab_user_tv" android:text="" android:drawableTop="@drawable/bottom_tab_item_user_selector" style="@style/bottom_tab_text_style" />
+    </com.huajiao.main.MainTabItemView>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.topic.adapter.CloneFeedTopComponent android:id="@id/topicadapte_live_top" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/feed_top_component_height" />
+    <RelativeLayout android:id="@id/topicadapte_layout_con" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topicadapte_live_top">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/topicadapte_image_con" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/main_def_bg" fresco:placeholderImageScaleType="centerCrop" fresco:actualImageScaleType="centerCrop" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+        <ImageView android:id="@id/topicadapte_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/explore_tag_live_big" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/alpha80_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/topicadapte_textview_content" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="\#人正在观看#一起去旅行" android:singleLine="true" android:layout_below="@id/topicadapte_layout_con" />
+    <View android:background="@color/alpha14_black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/topicadapte_textview_content" />
+</RelativeLayout>

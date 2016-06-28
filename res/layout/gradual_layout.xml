@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.gradual.GradualListView android:id="@id/gradual_list" android:background="@android:color/transparent" android:scrollbars="none" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:stackFromBottom="true" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="2.0dip" android:layout_weight="1.0" android:layout_above="@id/unread_tip" android:overScrollMode="never" />
+    <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="@color/text_color_1" android:gravity="center" android:id="@id/unread_tip" android:background="@drawable/bg_detail_comment_user_color07" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="5.0dip" android:text="content" android:drawableRight="@drawable/live_arrow_newinfomation" android:drawablePadding="5.0dip" android:layout_alignParentBottom="true" />
+</merge>

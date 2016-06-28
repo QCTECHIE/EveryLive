@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="@dimen/feed_top_component_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.RoundedImageView android:id="@id/feed_user_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" fresco:placeholderImage="@drawable/head_default" fresco:placeholderImageScaleType="centerCrop" fresco:failureImage="@drawable/head_default" fresco:actualImageScaleType="centerCrop" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/feed_user_avatar" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="14.0dip" android:textColor="#ff010101" android:ellipsize="end" android:id="@id/feed_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <com.huajiao.views.UserLevelView android:id="@id/feed_user_level" android:layout_marginLeft="1.0dip" style="@style/big_level_style" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="@color/text_color_3" android:ellipsize="end" android:id="@id/feed_video_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/feed_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/feed_follow_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/choice_followed_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="@color/text_color_3" android:id="@id/feed_video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

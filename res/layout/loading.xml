@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/loading_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/search_result_alert_layout" android:paddingBottom="@dimen/loading_paddingbottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.TextViewWithFont android:textSize="15.0sp" android:textColor="#ff808080" android:gravity="center_horizontal" android:id="@id/search_result_alert_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/loading_img_paddingtop" android:text="@string/search_no_result" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/search_result_alert_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/search_result_alert_tv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:id="@id/works_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_loading_view" />
+</RelativeLayout>

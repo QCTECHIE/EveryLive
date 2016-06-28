@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/tip_icon" android:layout_width="28.0dip" android:layout_height="fill_parent" android:src="@drawable/explore_list_tip_circle" android:scaleType="centerInside" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff555555" android:gravity="center_vertical" android:id="@id/explore_list_tip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="好直播尽在花椒" />
+</merge>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_view" android:background="@color/layer_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.pulltozoomview.PullToZoomRefreshLoadingView android:id="@id/refresh_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_alignParentBottom="true">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/auchor_iv" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" app:riv_border_width="1.0px" app:riv_border_color="@color/layer_color_5" app:riv_oval="true" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/img_sex" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/ic_sex_female" />
+            <com.huajiao.views.UserLevelView android:id="@id/user_level_view" android:visibility="gone" android:layout_marginLeft="1.0dip" style="@style/small_level_style" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/uid_tv" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/name_tv" />
+        <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="center" android:autoLink="none" android:id="@id/desc_tv" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="8" android:layout_below="@id/name_tv" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/follow_go_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff000000" android:id="@id/follow_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fans_go_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff000000" android:id="@id/fans_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff000000" android:id="@id/praise_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="12.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点赞" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/follow_layout" android:background="@drawable/round8_black_border_btn_bg_normal" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/follow_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/sixin_layout" android:background="@drawable/round8_black_border_btn_bg_normal" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/sixin_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="私信" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rank_user_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/host_rank_title_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="粉丝贡献" android:singleLine="true" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@id/rank_first_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/host_rank_default_icon" android:scaleType="centerCrop" app:riv_border_width="1.0px" app:riv_border_color="@color/layer_color_5" app:riv_oval="true" />
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@id/rank_second_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/host_rank_default_icon" android:scaleType="centerCrop" app:riv_border_width="1.0px" app:riv_border_color="@color/layer_color_5" app:riv_oval="true" />
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@id/rank_third_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/host_rank_default_icon" android:scaleType="centerCrop" app:riv_border_width="1.0px" app:riv_border_color="@color/layer_color_5" app:riv_oval="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:src="@drawable/arrow_right" />
+            </LinearLayout>
+            <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/switch_three_column_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/switch_three_column_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_jiugong_black" />
+            </LinearLayout>
+            <View android:background="#ffeeeeee" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/switch_one_column_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/switch_one_column_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_list_gray" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

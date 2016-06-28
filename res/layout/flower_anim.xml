@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/sky" android:background="@drawable/flower_sky" android:visibility="invisible" android:layout_width="188.0px" android:layout_height="285.0px" />
+    <View android:id="@id/heart" android:background="@drawable/flower_heart" android:visibility="invisible" android:layout_width="381.0px" android:layout_height="302.0px" android:layout_alignParentRight="true" />
+    <View android:id="@id/smoke" android:background="@drawable/flower_smoke" android:visibility="invisible" android:layout_width="539.0px" android:layout_height="533.0px" />
+    <View android:id="@id/qiubite" android:background="@drawable/flower_quibite" android:visibility="invisible" android:layout_width="613.0px" android:layout_height="418.0px" />
+    <View android:id="@id/arrow" android:background="@drawable/flower_arrow" android:visibility="invisible" android:layout_width="251.0px" android:layout_height="171.0px" android:layout_marginLeft="295.0px" android:layout_marginTop="130.0px" />
+    <View android:id="@id/flower" android:background="@drawable/flower_flower" android:visibility="invisible" android:layout_width="706.0px" android:layout_height="548.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <include android:layout_width="wrap_content" android:layout_height="24.0dip" layout="@layout/effect_title_view" />
+</merge>

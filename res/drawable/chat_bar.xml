@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="0.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffc3c3c5" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="0.5dip" android:right="0.0dip" android:bottom="0.5dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/chat_bar_back_color" />
+        </shape>
+    </item>
+</layer-list>

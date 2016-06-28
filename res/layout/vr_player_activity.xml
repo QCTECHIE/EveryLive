@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.qihoo.livecloud.view.LiveCloudPlayView android:id="@id/gl2_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.huajiao.views.live.LiveLoadingView android:id="@id/layout_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.views.DecoratorViewPager android:id="@id/view_pager" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:layout_gravity="center" android:id="@id/layout_close" android:background="@drawable/live_closed" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.huajiao.views.live.WatchesGuideView android:id="@id/watches_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.views.live.LiveFinishView android:id="@id/watches_finish_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

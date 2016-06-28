@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_F6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffef5350" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height">
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:gravity="center_vertical" android:id="@id/tv_close" android:clickable="true" android:layout_width="44.0dip" android:layout_height="44.0dip" android:drawableLeft="@drawable/top_back_selector" android:drawablePadding="3.0dip" />
+        <com.huajiao.views.TextViewWithBlodFont android:textSize="17.0dip" android:textColor="@color/text_color_5" android:gravity="center" android:id="@id/top_bar_center_top_tv" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="200.0dip" android:text="发红包" android:singleLine="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.huajiao.main.star.view.ViewPagerTitleIndicator android:id="@id/hs_title" android:background="#fff5f5f5" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="44.0dip" android:fillViewport="false" />
+    <View android:id="@id/view_line" android:background="@drawable/icon_star_bottom_line" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_stars" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

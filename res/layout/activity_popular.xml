@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout_content" android:background="@color/main_content_bg_new" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionbar_view_layout">
+        <LinearLayout android:orientation="vertical" android:id="@id/invite_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="@color/color_T3" android:gravity="left" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您的邀请人" />
+            <include layout="@layout/list_item_popular" />
+            <com.huajiao.views.TextViewWithFont android:textSize="10.0dip" android:textColor="@color/color_T3" android:gravity="left" android:id="@id/tip" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="编辑推荐" />
+        </LinearLayout>
+        <ListView android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/list_item_inner_divider_color" android:dividerHeight="1.0px" android:layout_below="@id/invite_layout" />
+        <View android:background="@color/list_item_inner_divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/invite_layout" />
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="@drawable/popular_follow_text_color" android:gravity="center" android:id="@id/follow" android:background="@drawable/popular_red_round_bg_selector" android:visibility="gone" android:layout_width="301.0dip" android:layout_height="43.0dip" android:layout_marginBottom="26.0dip" android:text="全部关注" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionbar_view_layout" layout="@layout/common_loading_view" />
+    <include android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionbar_view_layout" layout="@layout/common_error_view" />
+</RelativeLayout>

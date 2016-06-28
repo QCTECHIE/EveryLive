@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/ggqz_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="@color/color_L3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="广告欺诈" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#32000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="28.0dip" />
+            <RelativeLayout android:id="@id/yhsq_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="@color/color_L3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="淫秽色情" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#32000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+            <RelativeLayout android:id="@id/srmm_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="@color/color_L3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="骚扰谩骂" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#32000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+            <RelativeLayout android:id="@id/fdzz_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="@color/color_L3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="反动政治" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#32000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+            <RelativeLayout android:id="@id/qtnr_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0dip" android:textColor="@color/color_L3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="其他内容" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#32000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

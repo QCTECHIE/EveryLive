@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_pay_bg" android:layout_width="329.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TextViewWithFont android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/dlg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="支付成功" android:layout_centerHorizontal="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dlg_title0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="花椒豆暂未到账，请耐心等待，或联系客服。" android:layout_below="@id/dlg_title" android:layout_centerHorizontal="true" />
+    <View android:id="@id/dlg_divider" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" android:layout_below="@id/dlg_title0" />
+    <com.huajiao.views.TextViewWithFont android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dlg_ok" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="确定" android:layout_below="@id/dlg_divider" />
+</RelativeLayout>

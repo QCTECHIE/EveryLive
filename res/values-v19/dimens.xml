@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="prepare_toliving_margintop">399.0dip</dimen>
+    <dimen name="toliving_imagetext_paddingtop">42.0dip</dimen>
+</resources>

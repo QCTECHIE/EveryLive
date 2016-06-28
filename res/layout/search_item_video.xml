@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/search_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/search_video_item_sub_container" android:layout_width="101.0dip" android:layout_height="64.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/search_video_item_sub_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" fresco:riv_corner_radius="@dimen/video_corner" fresco:riv_oval="false" />
+        <com.huajiao.views.TextViewWithFont android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/search_video_item_live_tv" android:background="@drawable/bg_search_item_status_live" android:layout_width="32.0dip" android:layout_height="14.0dip" android:text="直播" android:layout_alignParentRight="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center|right" android:id="@id/search_video_item_replay_tv" android:background="@drawable/bg_search_item_status_replay" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="14.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingLeft="11.0dip" android:paddingTop="17.0dip" android:paddingRight="12.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="86.0dip" android:layout_toRightOf="@id/search_video_item_sub_container" android:layout_alignParentRight="true">
+        <com.huajiao.views.TextViewWithFont android:textSize="10.0sp" android:textColor="#ff666666" android:id="@id/search_video_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff434343" android:id="@id/search_video_item_title" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/search_video_item_time" android:layout_alignParentTop="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="11.0sp" android:textColor="#ff434343" android:id="@id/search_video_item_anchor_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

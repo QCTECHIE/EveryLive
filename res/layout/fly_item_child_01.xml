@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layout_content" android:background="@drawable/comment_bg" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.makeramen.roundedimageview.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/img_icon" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" android:layout_below="@id/layout_top" app:riv_border_width="1.0dip" app:riv_border_color="@color/color_white" app:riv_oval="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textColor="@color/color_T5" android:layout_gravity="center_vertical" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="的法fasfa" android:singleLine="true" />
+    <com.huajiao.views.TextViewWithFont android:textSize="15.0sp" android:textColor="@color/color_T3" android:layout_gravity="center_vertical" android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="desfasfasfasfasfasfasfasfasfsafasfasfas" android:singleLine="true" />
+    <View android:layout_width="10.0dip" android:layout_height="1.0dip" />
+</LinearLayout>

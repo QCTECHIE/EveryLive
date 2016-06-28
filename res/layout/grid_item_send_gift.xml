@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_photo_container" android:layout_width="50.0dip" android:layout_height="50.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_gift" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+        <ImageView android:id="@id/img_bursts" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_margin="3.0dip" android:src="@drawable/present_bursts" />
+        <ImageView android:id="@id/img_checked" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_margin="3.0dip" android:src="@drawable/live_gift_check_icon" />
+        <ImageView android:id="@id/img_activity" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/gift_activity" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/gift_text_color_selector" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="0" android:maxLines="1" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/gift_text_color_selector" android:ellipsize="end" android:gravity="center" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="敬请期待" android:maxLines="1" />
+</LinearLayout>

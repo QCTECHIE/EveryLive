@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="@color/text_color_3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:text="账户" android:singleLine="true" />
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/userid_layout" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="花椒号" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:gravity="center" android:id="@id/userid_text" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/setting_copy" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/user_layout" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="编辑资料" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/huajiao_wallet_layout" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="花椒钱包" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:textColor="#ffffa521" android:id="@id/wallet_amount" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/accout_safe" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="账号安全" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/accout_pay" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="花椒豆充值" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/accout_cash" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="花椒豆提现" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/black_list" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="黑名单" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/apply_family_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/apply_family_layout" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <com.huajiao.views.TextViewWithFont android:text="我的家族" style="@style/tv_user_center_item" />
+                    <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+                </RelativeLayout>
+                <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/field_layout" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <com.huajiao.views.TextViewWithFont android:text="我的场控" style="@style/tv_user_center_item" />
+                    <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0dip" android:textColor="@color/text_color_3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:text="设置" android:singleLine="true" />
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/layout_unfollowed_message" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="拒收未关注人的消息" style="@style/tv_user_center_item" />
+                <ImageView android:id="@id/toggle_unfollowed_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/icon_toggle_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/message_setting" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="新消息提醒" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/layout_gift_capture" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="截图自动保存相册" style="@style/tv_user_center_item" />
+                <ImageView android:id="@id/toggle_gift_capture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/icon_toggle_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/line_gift_capture" android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/clear_cache" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="清理缓存" style="@style/tv_user_center_item" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/feedback" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="帮助与反馈" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/about" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.huajiao.views.TextViewWithFont android:text="关于花椒" style="@style/tv_user_center_item" />
+                <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sixin_test_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/sixin_test_entry" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <com.huajiao.views.TextViewWithFont android:text="私信测试入口" style="@style/tv_user_center_item" />
+                    <com.huajiao.views.TextViewWithFont android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_style_grey_normal_new" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+            <com.huajiao.views.TextViewWithFont android:textSize="15.0sp" android:textColor="@color/tv_focus_red" android:gravity="center" android:background="@drawable/setting_item_background_color_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="退出登录" android:onClick="onClickLogoutListener" />
+            <View android:background="@color/layer_color_5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.huajiao.views.TextViewWithFont android:layout_gravity="center_horizontal" android:id="@id/tv_vesition" android:paddingTop="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" style="@style/text_style_grey_larger" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

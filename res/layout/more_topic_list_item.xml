@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/topic_latest_text_selector" android:clickable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.main.explore.view.MyTextView android:textSize="@dimen/topic_more_item_text_size" android:textColor="@color/topic_more_text_fore_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/topic_text_name" android:paddingLeft="@dimen/topic_more_item_text_padding_left" android:layout_width="0.0dip" android:layout_height="@dimen/topic_more_item_height" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/topic_more_item_text_size" android:textColor="@color/topic_more_text_fore_color" android:gravity="center|left" android:id="@id/topic_text_sign" android:layout_width="@dimen/topic_more_item_sign_width" android:layout_height="fill_parent" android:text=" " />
+    <TextView android:textSize="@dimen/topic_more_item_num_size" android:textColor="@color/topic_more_num_fore_color" android:gravity="center|right" android:id="@id/topic_text_watch_count" android:paddingRight="@dimen/topic_more_item_num_padding_right" android:layout_width="@dimen/topic_more_item_num_width" android:layout_height="fill_parent" />
+</LinearLayout>

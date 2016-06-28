@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_main" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.UserLevelView android:id="@id/chat_level" android:layout_marginTop="4.0dip" style="@style/big_level_style" />
+    <com.huajiao.views.gradual.CommentTextView android:textSize="16.0dip" android:textColor="@color/text_color_5" android:gravity="center_vertical" android:id="@id/chat_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="" style="@style/chat_text_style" />
+</RelativeLayout>

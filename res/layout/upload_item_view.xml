@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffaab1bd" android:layout_width="fill_parent" android:layout_height="41.0dip">
+        <pl.droidsonroids.gif.GifImageView android:id="@id/upload_item_image" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff383838" android:id="@id/upload_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/image_uploading" android:layout_toRightOf="@id/upload_item_image" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/upload_item_delete" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/share_white_close" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/upload_item_share_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/upload_item_delete" android:layout_centerVertical="true">
+            <ImageView android:id="@id/upload_item_share_wb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_white_weibo" />
+            <ImageView android:id="@id/upload_item_share_wxgroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/share_white_moment" />
+            <ImageView android:id="@id/upload_item_share_wx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/share_white_wechat" />
+            <ImageView android:id="@id/upload_item_share_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/share_white_qq" />
+        </LinearLayout>
+        <ImageView android:id="@id/upload_item_redo" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/share_white_rfresh" android:scaleType="center" android:layout_toLeftOf="@id/upload_item_delete" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.huajiao.views.HorizonalProgressView android:id="@id/upload_item_progress" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+</merge>

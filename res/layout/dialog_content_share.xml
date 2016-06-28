@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/white_round_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TextViewWithBlodFont android:textSize="16.0sp" android:textColor="#ff434343" android:gravity="center" android:id="@id/share_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="分享到" android:height="61.0dip" />
+    <View android:background="#20000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/share_way_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/content_weibo_share" android:text="@string/share_title_weibo" android:drawableTop="@drawable/ic_share_weibo" style="@style/share_dialog_text" />
+            <TextView android:id="@id/content_wx_circle" android:text="@string/share_title_wxgroup" android:drawableTop="@drawable/ic_share_wxgroup" style="@style/share_dialog_text" />
+            <TextView android:id="@id/content_wx" android:text="@string/share_title_wx" android:drawableTop="@drawable/ic_share_wx" style="@style/share_dialog_text" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+            <TextView android:id="@id/content_qqzone" android:text="@string/share_title_qzone" android:drawableTop="@drawable/ic_share_qzone" style="@style/share_dialog_text" />
+            <TextView android:id="@id/content_qq" android:text="@string/share_title_qq" android:drawableTop="@drawable/ic_share_qq" style="@style/share_dialog_text" />
+            <TextView android:id="@id/content_forward" android:text="@string/share_title_forward" android:drawableTop="@drawable/ic_share_forward" style="@style/share_dialog_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider2" android:background="#20000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip" />
+    <com.huajiao.views.TextViewWithBlodFont android:textSize="15.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/content_btn_cancel" android:background="@drawable/round4_gray_btn_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="21.0dip" android:text="取消" />
+</LinearLayout>

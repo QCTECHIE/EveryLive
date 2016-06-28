@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huajiao.imchat.imchatview.KeyBoardLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/chatactivity_linearlayout_bar" android:background="@color/chat_bar_back_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="@drawable/chat_bar" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/chatactivity_linearlayout_input" android:background="@drawable/chat_edit_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="52.0dip" android:layout_marginRight="52.0dip" android:minHeight="32.0dip">
+                <com.huajiao.imchat.imchatview.BackEditText android:textSize="15.5sp" android:textColor="#ff333333" android:id="@id/chatactivity_edittext_input" android:background="#00000000" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:minHeight="32.0dip" android:maxLines="4" android:maxLength="1000" android:textCursorDrawable="@drawable/edittext_cour" />
+            </RelativeLayout>
+            <ImageButton android:id="@id/chatactivity_imagebutton_keyface" android:background="#00ffffff" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/chat_icon_plus" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/chatactivity_imagebutton_gift" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/chat_icon_gift" android:scaleType="fitXY" android:layout_alignBottom="@id/chatactivity_linearlayout_input" />
+            <ImageView android:id="@id/chatactivity_imagebutton_keybroad" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/chat_icon_keyboard" android:scaleType="fitXY" android:layout_alignBottom="@id/chatactivity_linearlayout_input" />
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/text_send_back_color_nor" android:gravity="center" android:id="@id/chatactivity_button_send" android:background="@color/transparent" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="33.0dip" android:layout_marginRight="8.0dip" android:text="发送" android:layout_alignBottom="@id/chatactivity_linearlayout_input" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ViewFlipper android:id="@id/chatactivity_content_viewflipper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip">
+            <RelativeLayout android:id="@id/chatactivity_enjimotion_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/chatactivity_photo_layout" android:layout_width="58.0dip" android:layout_height="100.0dip" android:layout_marginLeft="29.0dip" android:layout_marginTop="15.0dip">
+                    <Button android:id="@id/chatactivity_button_photo" android:background="@drawable/button_picpick" android:layout_width="58.0dip" android:layout_height="58.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/alpha50_black" android:id="@id/chatactivity_textview_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="照片" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/chatactivity_camera_layout" android:layout_width="58.0dip" android:layout_height="100.0dip" android:layout_marginLeft="27.0dip" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/chatactivity_photo_layout">
+                    <Button android:id="@id/chatactivity_button_camera" android:background="@drawable/button_shooting" android:layout_width="58.0dip" android:layout_height="58.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/alpha50_black" android:id="@id/chatactivity_textview_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="拍摄" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.huajiao.imchat.gift.ui.ImGiftView android:id="@id/chatactivity_gift_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </ViewFlipper>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/chatactivity_chat_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/chatactivity_linearlayout_bar">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/chatactivity_barlayout_dialogtype" android:background="@drawable/chat_bar_dialog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height">
+            <ImageButton android:id="@id/chatactivity_imagebutton_left_return" android:background="#00ffffff" android:padding="10.0dip" android:layout_width="@dimen/top_bar_height" android:layout_height="@dimen/top_bar_height" android:src="@drawable/live_profile_back" android:scaleType="centerInside" />
+            <ImageButton android:id="@id/chatactivity_imagebutton_right_close" android:background="#00ffffff" android:padding="10.0dip" android:layout_width="@dimen/top_bar_height" android:layout_height="@dimen/top_bar_height" android:src="@drawable/live_profile_close" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/chatactivity_textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/top_bar_height" android:layout_marginRight="@dimen/top_bar_height" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.huajiao.views.TopBarView android:id="@id/chatactivity_barlayout_activitytype" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_bar_height">
+            <RelativeLayout android:id="@id/chatactivity_layout_isfriend" android:background="@color/isfriend_back" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/textfont_isfriend" android:id="@id/chatactivity_textview_isfriend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="互相关注可以加为好友哦~~" android:singleLine="true" android:layout_centerVertical="true" />
+                <Button android:id="@id/chatactivity_image_addfriend" android:background="@drawable/explore_add_chat" android:layout_width="40.0dip" android:layout_height="28.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.huajiao.imchat.imchatview.ImChatListview android:scrollbarThumbVertical="@drawable/chat_listview_bar" android:id="@id/chatactivity_listview" android:background="@color/chat_back_color" android:fadingEdge="none" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparents" android:scrollingCache="false" android:transcriptMode="normal" android:divider="@color/transparents" android:dividerHeight="0.0dip" android:smoothScrollbar="true" android:overScrollMode="never" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/chatactivity_chat_layout_upp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/chatactivity_chat_layout" />
+</com.huajiao.imchat.imchatview.KeyBoardLayout>

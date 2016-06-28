@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="constellation_string_array">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+    <string-array name="gender_string_array">
+        <item>男</item>
+        <item>女</item>
+        <item>保密</item>
+    </string-array>
+    <string-array name="select_dialog_cancel_black">
+        <item>解除拉黑</item>
+    </string-array>
+    <string-array name="test_msg_actions">
+        <item>复制</item>
+        <item>删除</item>
+        <item>标记已读</item>
+        <item>标记未读</item>
+        <item>重新发送</item>
+    </string-array>
+    <string-array name="test_session_actions">
+        <item>删除</item>
+    </string-array>
+    <string-array name="topic_types">
+        <item>悬赏任务</item>
+        <item>话题活动</item>
+    </string-array>
+</resources>

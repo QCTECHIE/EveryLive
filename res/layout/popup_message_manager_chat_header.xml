@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header_container" android:background="#fffffef5" android:layout_width="fill_parent" android:layout_height="@dimen/secretary_item_height">
+        <com.huajiao.views.RoundedImageView android:id="@id/auchor_iv" android:layout_marginLeft="10.0dip" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/head_default" fresco:placeholderImageScaleType="centerCrop" fresco:failureImage="@drawable/head_default" fresco:roundAsCircle="false" style="@style/secretary_img_style" />
+        <com.huajiao.views.TextViewWithFont android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_chat" android:background="@drawable/round6_black_btn_bg_normal" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="发起" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_toLeftOf="@id/tv_chat" android:layout_toRightOf="@id/auchor_iv">
+            <com.huajiao.views.UserLevelView android:id="@id/user_level_view" android:layout_marginRight="2.0dip" android:text="" style="@style/big_level_style" />
+            <com.huajiao.views.TextViewWithFont android:textSize="17.0sp" android:textColor="@color/list_item_message_title_color_selector" android:ellipsize="end" android:id="@id/content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:layout_toLeftOf="@id/tv_chat" />
+            <ImageView android:id="@id/img_verify" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="#ff9b9b9b" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/tv_chat" android:layout_toRightOf="@id/auchor_iv" android:layout_below="@id/layout_title" />
+        <ImageView android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>

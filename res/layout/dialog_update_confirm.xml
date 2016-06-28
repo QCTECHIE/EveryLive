@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="340.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/update_top_bg" android:layout_width="fill_parent" android:layout_height="170.0dip">
+        <Button android:id="@id/btn_close" android:background="@drawable/update_btn_close_selector" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" />
+        <ImageView android:layout_width="230.0dip" android:layout_height="24.0dip" android:layout_marginTop="34.0dip" android:src="@drawable/update_title" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="30.0dip" android:layout_height="60.0dip" android:layout_marginBottom="35.0dip" android:src="@drawable/update_icon" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <com.huajiao.views.TextViewWithFont android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/dlg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="87% 的用户正在使用最新版" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/update_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="@color/color_T2" android:id="@id/dlg_content_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:text="发布日期:2015-7-8" android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="14.0sp" android:textColor="@color/color_T2" android:id="@id/dlg_content_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:text="最新版本:1.6.2.1006" android:singleLine="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_black" android:id="@id/content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:text="更新内容:" />
+                <com.huajiao.views.TextViewWithFont android:textSize="13.0sp" android:textColor="#ff434343" android:id="@id/dlg_content" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginRight="30.0dip" android:text="1.优化了BUdasfasfasfdasfasfasfsafsadsfaGfdasfdasfasdfasfasddf\n2.优化了性能\n3.修复的若干个问题\n1.优化了BUG\n2.优化了性能\n3.修复的若干个问题1.优化了BUG\n2.优化了性能\n3.修复的若干个问题" android:lineSpacingMultiplier="1.3" android:isScrollContainer="true" />
+            </LinearLayout>
+        </ScrollView>
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_update" android:background="@drawable/red_round_bg_selector" android:layout_width="228.0dip" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:text="立即升级" />
+    </LinearLayout>
+</LinearLayout>

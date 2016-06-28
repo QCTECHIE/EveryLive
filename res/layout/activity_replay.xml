@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/video_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.qihoo.livecloud.view.LiveCloudPlayView android:id="@id/gl2_video_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <TextView android:textSize="13.0dip" android:textColor="#ff5b5b5b" android:id="@id/landspace_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="130.0dip" android:text="" />
+    <ImageView android:id="@id/landspace_btn_out" android:background="@drawable/live_button_scale" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="320.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/landspace_btn_in" android:background="@drawable/live_button_closefullscreen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/replay_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.huajiao.views.live.HostFocusView android:id="@id/replay_host" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+    <Button android:id="@id/replay_report" android:background="@drawable/btn_detail_report_selector" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:layout_toRightOf="@id/replay_host" />
+    <com.huajiao.views.userview.UserHorizonlListLayout android:id="@id/user_horizonl_list_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" />
+    <com.huajiao.detail.Comment.IncomeView android:orientation="horizontal" android:id="@id/layout_income" android:background="@drawable/income_bk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/replay_host" />
+    <ImageView android:background="@drawable/replay_bottom_mask_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.huajiao.views.gradual.GradualLayout android:id="@id/replay_danmaku" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="112.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="80.0dip" android:stackFromBottom="true" android:cacheColorHint="@android:color/transparent" />
+        <com.huajiao.replay.ReplayControlView android:id="@id/replay_control" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:id="@id/replay_bottom_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <Button android:id="@id/replay_play" android:background="@drawable/replay_pause_seletor" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.huajiao.views.TextViewWithFont android:gravity="center|right" android:id="@id/replay_comment" android:background="@drawable/btn_live_comment_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" />
+                <com.huajiao.views.TextViewWithFont android:id="@id/replay_full" android:background="@drawable/btn_live_showdanmaku_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" />
+                <com.huajiao.views.TextViewWithFont android:id="@id/replay_forward" android:background="@drawable/btn_live_share_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" />
+                <com.huajiao.views.TextViewWithFont android:gravity="center|right" android:id="@id/replay_vote_total" android:background="@drawable/ic_video_praise" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.huajiao.views.VoteSurface android:id="@id/replay_vote" android:layout_width="140.0dip" android:layout_height="200.0dip" android:layout_marginRight="-16.0dip" android:layout_marginBottom="52.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.huajiao.views.live.LiveLoadingView android:id="@id/replay_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.views.TextViewWithFont android:id="@id/replay_close" android:background="@drawable/btn_live_close_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" />
+    <com.huajiao.views.live.LiveFinishView android:id="@id/replay_finish" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.replay.ReplayCommentView android:id="@id/replay_comment_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.views.emojiedit.EditFragment android:id="@id/frag_emojiedit" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

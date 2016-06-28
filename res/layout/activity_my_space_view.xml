@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layer_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.listview.RefreshListView android:id="@id/list_view" android:background="@color/layer_color_3" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+        <include android:id="@id/focus_network_error_view" layout="@layout/common_error_view" />
+        <include android:id="@id/focus_loading_view" layout="@layout/common_loading_view" />
+        <include android:id="@id/focus_empty_view" layout="@layout/focus_empty_layout" />
+        <ProgressBar android:id="@id/progress_loading" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+        <com.huajiao.main.home.view.FeedVoteView android:id="@id/home_feed_vote_view" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

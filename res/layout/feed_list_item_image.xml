@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.main.home.view.FeedTopComponent android:id="@id/feed_image_top" android:layout_width="fill_parent" android:layout_height="@dimen/feed_top_component_height" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huajiao.main.home.view.FeedImageView android:id="@id/feed_image_cover_view" android:layout_width="fill_parent" android:layout_height="150.0dip" fresco:placeholderImage="@drawable/main_def_bg" fresco:placeholderImageScaleType="centerCrop" fresco:actualImageScaleType="centerCrop" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+    </FrameLayout>
+    <com.huajiao.main.home.view.FeedBottomAction android:id="@id/feed_image_action" android:layout_width="fill_parent" android:layout_height="@dimen/feed_action_component_height" />
+    <com.huajiao.main.home.view.FeedBottomComment android:id="@id/feed_image_comments" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="#eeffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_bottom" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_home_close_selector" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/layout_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:layout_above="@id/layout_bottom" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_photo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/live_home_image_selector" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4b4b4b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="图片" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_living" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="50.0dip">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/live_home_live_selector" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4b4b4b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="直播" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_video" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/live_home_video_selector" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4b4b4b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="小视频" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

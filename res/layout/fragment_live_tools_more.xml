@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main_tools_more" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginBottom="55.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_mute_up" android:background="@drawable/btn_live_resumesound_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/btn_showcomment" android:layout_alignParentBottom="true" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_music" android:background="@drawable/btn_live_music_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_music_play" android:background="@drawable/btn_live_music_pause_selector" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

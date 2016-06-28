@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.gift.view.BigGiftAnimView android:gravity="center_horizontal" android:id="@id/big_gift_anim_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/top_bar_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huajiao.views.live.HostFocusView android:id="@id/host_focus_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+        <com.huajiao.views.listview.HorizontalListView android:id="@id/user_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:layout_toLeftOf="@id/btn_close" android:layout_toRightOf="@id/host_focus_view" android:layout_alignParentTop="true" />
+        <Button android:layout_gravity="center" android:id="@id/btn_close" android:background="@drawable/btn_live_close_top_selector" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+        <com.huajiao.detail.Comment.IncomeView android:orientation="horizontal" android:id="@id/income_view" android:background="@drawable/income_bk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/host_focus_view" />
+        <com.huajiao.views.live.LiveNoticeView android:id="@id/notice_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/user_horizonl_list_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/main_bar_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.gift.view.LeftGiftAnimView android:id="@id/left_anim_view_1" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/hit_gift_margin_left" android:layout_marginBottom="310.0dip" android:layout_alignParentBottom="true" />
+        <com.huajiao.gift.view.LeftGiftAnimView android:id="@id/left_anim_view_2" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/hit_gift_margin_left" android:layout_marginBottom="-14.0dip" android:layout_above="@id/left_anim_view_1" />
+        <com.huajiao.detail.fly.FlyView android:id="@id/fly_view_1" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginBottom="@dimen/fly_margin_bottom" android:layout_alignParentBottom="true" />
+        <com.huajiao.detail.fly.FlyView android:id="@id/fly_view_2" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginBottom="2.0dip" android:layout_above="@id/fly_view_1" />
+        <RelativeLayout android:id="@id/bottom_bar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@drawable/mask_down" android:layout_width="fill_parent" android:layout_height="163.0dip" />
+            <com.huajiao.views.gradual.GradualLayout android:id="@id/chat_list_view" android:layout_width="fill_parent" android:layout_height="112.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="60.0dip" />
+            <Button android:id="@id/btn_comment" android:background="@drawable/btn_live_comment_new_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/chat_list_view" />
+            <RelativeLayout android:id="@id/btn_msg" android:background="@drawable/btn_live_msg_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/btn_comment" android:layout_below="@id/chat_list_view">
+                <ImageView android:id="@id/btn_msg_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/live_message_tip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <Button android:id="@id/btn_present_gift" android:background="@drawable/btn_live_gift_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/chat_list_view" android:layout_centerHorizontal="true" />
+            <Button android:id="@id/btn_hide" android:background="@drawable/btn_live_clear_screen_op_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/btn_share" android:layout_below="@id/chat_list_view" />
+            <Button android:id="@id/btn_share" android:background="@drawable/btn_live_share_new_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/chat_list_view" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.huajiao.views.emojiedit.EditFragment android:id="@id/edit_bar_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.views.live.WatchesGuideView android:id="@id/guide_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.animation.EffectGiftView android:id="@id/effect_gift_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.gift.view.EffectAnimView android:id="@id/effect_anim_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.views.live.LiveFinishView android:id="@id/finish_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.detail.Comment.GiftView android:id="@id/gift_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

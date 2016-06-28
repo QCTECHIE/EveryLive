@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/feed_item_component_top" />
+    <pl.droidsonroids.gif.GifImageView android:id="@id/feed_image_cover_view" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="centerCrop" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/feed_item_component_bottom" />
+</LinearLayout>

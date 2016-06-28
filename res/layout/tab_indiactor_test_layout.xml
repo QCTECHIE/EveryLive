@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/tv_refresh" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="刷新" />
+    <com.alimon.lib.tabindiactorlib.widget.TabPagerView android:id="@id/tab_page_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

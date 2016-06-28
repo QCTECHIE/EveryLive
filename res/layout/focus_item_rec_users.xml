@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <com.huajiao.views.TextViewWithFont android:textSize="15.0sp" android:textColor="@color/text_color_1" android:gravity="center" android:id="@id/tv_sum_stars" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="推荐直播" />
+        <com.huajiao.views.TextViewWithFont android:textSize="13.0sp" android:textColor="@color/text_color_3" android:gravity="center" android:id="@id/txt_change" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="换一批" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rec_users_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

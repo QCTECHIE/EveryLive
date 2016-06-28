@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/main_content_bg_new" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.listview.RefreshListView android:id="@id/recycler_search_result" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/dsb_track_color" android:gravity="center" android:id="@id/search_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:text="没有搜索到相关信息" />
+</RelativeLayout>

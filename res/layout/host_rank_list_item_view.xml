@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_list_item_ranking_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <com.huajiao.views.TextViewWithBlodFont android:textSize="14.0dip" android:textColor="#ff7c7c7c" android:gravity="center" android:id="@id/rank_num_tv" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/header_riv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="48.0dip" android:src="@drawable/head_default" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_border_width="1.0dip" app:riv_border_color="@color/layer_color_5" app:riv_oval="true" />
+        <ImageView android:id="@id/arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/rank_list_item_followed_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/focus_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/rank_list_item_follow_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/focus_iv" android:layout_toRightOf="@id/header_riv" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.huajiao.views.TextViewWithBlodFont android:textSize="14.0dip" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="greenle" android:maxLines="1" android:maxEms="10" />
+                <com.huajiao.views.UserLevelView android:id="@id/user_level_view" android:layout_marginLeft="2.0dip" style="@style/small_level_style" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/score_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="273311" android:maxLines="1" />
+                <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/score_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="花椒币" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

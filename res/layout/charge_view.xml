@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <EditText android:textSize="16.0sp" android:textColor="@color/charge_value_color_normal" android:textColorHint="@color/charge_rmb_color_normal" android:gravity="center_horizontal" android:id="@id/charge_value" android:background="@null" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入豆数" android:cursorVisible="true" android:singleLine="true" android:inputType="number" android:textCursorDrawable="@drawable/cursor" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/charge_rmb_color_normal" android:gravity="center_horizontal" android:id="@id/charge_rmb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0元" />
+    </LinearLayout>
+</merge>

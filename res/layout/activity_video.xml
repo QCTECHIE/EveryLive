@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/video_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.huajiao.video.VideoPlayer android:id="@id/feed_image_cover_view" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+        <ImageView android:id="@id/video_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.huajiao.views.common.ViewItemLoading android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/play_again" android:background="@drawable/video_recorder_btn_play" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+    </FrameLayout>
+</RelativeLayout>

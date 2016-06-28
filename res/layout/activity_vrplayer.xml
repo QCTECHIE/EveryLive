@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:screenOrientation="landscape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.paranomicplayer.VRSurfaceView android:id="@id/vrview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_enterbg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/enter_bg_360player" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_errortoast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/errortoast" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/endplay_prompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/endplay" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <include layout="@layout/layout_changeto_wheadt" />
+    <include layout="@layout/layout_changeto_vr" />
+</RelativeLayout>

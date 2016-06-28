@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_red_packet_bg" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.huajiao.gift.view.RedPacketNumberTextView android:textColor="#fffff000" android:gravity="center_horizontal" android:id="@id/redpacket_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="8888" android:layout_alignParentBottom="true" />
+</merge>

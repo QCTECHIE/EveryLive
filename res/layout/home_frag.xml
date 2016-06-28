@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/home_focus_top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height" />
+    <android.support.v4.view.ViewPager android:id="@id/home_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/home_padding_bottom" android:layout_below="@id/home_focus_top_bar" />
+    <com.huajiao.main.home.view.FeedVoteView android:id="@id/home_feed_vote_view" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

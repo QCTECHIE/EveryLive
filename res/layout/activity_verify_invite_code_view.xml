@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.TopBarView android:id="@id/topbar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/redbag_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="24.0dip" android:textColor="#ffffe42c" android:id="@id/desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="报口令 得红包" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/white_round30_bg" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip">
+                <com.huajiao.views.EditTextWithFont android:textSize="20.0dip" android:textColor="#ff000000" android:textColorHint="#ffdddddd" android:id="@id/code_et" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="请输入红包口令" android:cursorVisible="true" android:singleLine="true" android:maxLength="30" android:layout_weight="1.0" android:inputType="number" android:textCursorDrawable="@drawable/cursor" />
+                <com.huajiao.views.ButtonWithFont android:enabled="false" android:textSize="14.0dip" android:textStyle="bold" android:textColor="@drawable/red_text_btn_state_text_color" android:id="@id/goto_next_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:text="确定" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/title1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_friends_inputcode_where_question_text" />
+            <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ff555555" android:id="@id/desc1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/invite_friends_inputcode_where_answer_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="32.0dip">
+            <com.huajiao.views.TextViewWithBlodFont android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/title2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_friends_inputcode_nothing_question_text" />
+            <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ff555555" android:id="@id/desc2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/invite_friends_inputcode_nothing_answer_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.huajiao.views.ButtonWithFont android:textSize="14.0dip" android:textColor="#ffef5350" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/goto_cancel_btn" android:background="@drawable/round20_red_border_btn_bg_selector" android:layout_width="82.0dip" android:layout_height="32.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="跳过" />
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/black_bg_loading_view" />
+</FrameLayout>

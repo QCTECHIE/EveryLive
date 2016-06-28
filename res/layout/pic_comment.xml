@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/replay_comment_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/replay_fragment" android:paddingBottom="45.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.huajiao.views.listview.RefreshListView android:id="@id/replay_comment_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/layer_color_5" android:dividerHeight="0.100000024dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/replay_comment_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:background="@drawable/replay_network" android:layout_width="74.0dip" android:layout_height="56.0dip" />
+            <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="@color/color_T3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="当前网络不可用，请稍后重试" />
+            <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="@color/user_color_17" android:gravity="center" android:id="@id/replay_comment_btn_retry" android:background="@drawable/btn_replay_comment_retry_bg" android:layout_width="120.0dip" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:text="刷新重试" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

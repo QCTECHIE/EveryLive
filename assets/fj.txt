@@ -1,0 +1,312 @@
+[
+    {
+        "fenlei_id": "mask",
+        "fenlei_img_normal": "http://image.huajiao.com/6e3c2b81f27b9a5ea8e80e6d0f0459b1.jpg",
+        "fenlei_img_select": "http://image.huajiao.com/1850ccebe1623648e235f97813aff3d3.jpg",
+        "fenlei_arr": [
+            {
+                "texiao_id": "360016_1",
+                "texiao_img_normal": "http://image.huajiao.com/54d9fedc1386378cc9cd7b120e19f88d.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360016_1.zip"
+            },
+            {
+                "texiao_id": "360018_1",
+                "texiao_img_normal": "http://image.huajiao.com/38e55fa3ac08f91bf39d45650a8adc23.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360018_1.zip"
+            },
+            {
+                "texiao_id": "360019_1",
+                "texiao_img_normal": "http://image.huajiao.com/8618e934c6e7b22bfcd0c8038de3f9db.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360019_1.zip"
+            },
+            {
+                "texiao_id": "360002_1",
+                "texiao_img_normal": "http://image.huajiao.com/964dc487e8e757c932c8882f4c0805cb.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360002_1.zip"
+            },
+
+            {
+                "texiao_id": "360001_1",
+                "texiao_img_normal": "http://image.huajiao.com/ef8b23126122430ac30c7a860711747a.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360001_1.zip"
+            },
+            {
+                "texiao_id": "360017_1",
+                "texiao_img_normal": "http://image.huajiao.com/e692ec178bce71abc2ebb8b4d40032e0.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360017_1.zip"
+            },
+            {
+                "texiao_id": "360005_1",
+                "texiao_img_normal": "http://image.huajiao.com/41090e42258f82e9ab246a12fd01581d.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360005_1.zip"
+            },
+            {
+                "texiao_id": "360010_1",
+                "texiao_img_normal": "http://image.huajiao.com/d0b108947e05a51445f1d6b56a878b35.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360010_1.zip"
+            },
+            {
+                "texiao_id": "360000_1",
+                "texiao_img_normal": "http://image.huajiao.com/4904249b33204a7c3788d57b3fef5e86.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360000_1.zip"
+            },
+            {
+                "texiao_id": "360020_1",
+                "texiao_img_normal": "http://image.huajiao.com/35b5f4f54bc636a58594a06b6cc63070.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360020_1.zip"
+            },
+            {
+                "texiao_id": "360022_1",
+                "texiao_img_normal": "http://image.huajiao.com/4aadcf944f911c6a5ab9ff0a4fa727cb.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360022_1.zip"
+            },
+            {
+                "texiao_id": "360023_1",
+                "texiao_img_normal": "http://image.huajiao.com/e16becc71425e6666e6e3eded2d0570f.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/androidbianlian/360023_1.zip"
+            }
+            ]
+    },
+    {
+        "fenlei_id": "hot_1",
+        "fenlei_img_normal": "http://image.huajiao.com/1c44f0876dc4cb7c933c65558021ed5e.jpg",
+        "fenlei_img_select": "http://image.huajiao.com/9139378560706e97730e8cd453019927.jpg",
+        "fenlei_arr": [
+                    {
+                "texiao_id": "30014_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30014_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30014_1.zip"
+            },
+                       {
+                "texiao_id": "31004_2",
+                "texiao_img_normal": "http://image.huajiao.com/d591dd7ae71909f1cc8b8ade5fdcee42.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/31004_2.zip"
+            },
+                        {
+                "texiao_id": "30004_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30004_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30004_1.zip"
+            },
+                       {
+                "texiao_id": "30024_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30024_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/30024_1.zip"
+            },
+                       {
+                "texiao_id": "30012_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30012_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/30012_1.zip"
+            },
+                        {
+                "texiao_id": "31001_1",
+                "texiao_img_normal": "http://image.huajiao.com/e4c45075f368de12d5512882a8965c2a.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0317/31001_1.zip"
+            },
+            {
+                "texiao_id": "80001_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0415/80001_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/80001_1.zip"
+            },
+                        {
+                "texiao_id": "31005_2",
+                "texiao_img_normal": "http://image.huajiao.com/54c17066fde8af0d9c1e8ff355fe404f.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu031702/31005_2.zip"
+            },
+                        {
+                "texiao_id": "31003_1",
+                "texiao_img_normal": "http://image.huajiao.com/2aab57dbffa922f03a6adf640af26d3a.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0317/31003_1.zip"
+            },
+                       {
+                "texiao_id": "31006_2",
+                "texiao_img_normal": "http://image.huajiao.com/368756a211cc9246a772c03a387c3622.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu031702/31006_2.zip"
+            },
+                        {
+                "texiao_id": "31007_1",
+                "texiao_img_normal": "http://image.huajiao.com/88df2a018d7d4ba934955bd826c7032a.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu031702/31007_1.zip"
+            },
+                        {
+                "texiao_id": "40008_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/40008_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/40008_1.zip"
+            },
+                        {
+                "texiao_id": "40009_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/40009_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/40009_1.zip"
+            },
+                        {
+                "texiao_id": "41001_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0312/41001_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0312/41001_1.zip"
+            },
+                        {
+                "texiao_id": "30028_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0312/30028_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0312/30028_1.zip"
+            },
+                        {
+                "texiao_id": "30013_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0312/30013_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0312/30013_1.zip"
+            },
+                        {
+                "texiao_id": "30010_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30010_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30010_1.zip"
+            },                        
+                       {
+                "texiao_id": "31002_1",
+                "texiao_img_normal": "http://image.huajiao.com/04d93efc0796e129b4fffa77e5350eca.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0317/31002_1.zip"
+            },
+                       {
+                "texiao_id": "40005_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0312/40005_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0312/40005_1.zip"
+            },        
+              {
+                "texiao_id": "30015_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0309/30015_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0309/30015_1.zip"
+            },
+                     {
+                "texiao_id": "31019_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0331/31019_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0331/31019_1.zip"
+            },
+                        {
+                "texiao_id": "31017_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0331/31017_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0331/31017_1.zip"
+            },
+                        {
+                "texiao_id": "31012_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0331/31012_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/31012_1.zip"
+            },
+                        {
+                "texiao_id": "31009_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0331/31009_1_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0331/31009_1_1.zip"
+            },
+                    {
+                "texiao_id": "31024_1",
+                "texiao_img_normal": "http://image.huajiao.com/2c69019ffa1dbb40c14a0f255d6a19b7.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0324/31024_1.zip"
+            },
+                       {
+                "texiao_id": "31018_1",
+                "texiao_img_normal": "http://image.huajiao.com/782df8ae3eb07fe7c555782671ac21f5.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0324/31018_1.zip"
+            },
+                       {
+                "texiao_id": "31014_1",
+                "texiao_img_normal": "http://image.huajiao.com/f0929bde15d98fe30c874463251565fb.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0324/31014_1.zip"
+            },
+                       {
+                "texiao_id": "31013_1",
+                "texiao_img_normal": "http://image.huajiao.com/16c96a2676a504b8f9c1b12700dc4fb5.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0324/31013_1.zip"
+            },
+                    {
+                "texiao_id": "31010_1",
+                "texiao_img_normal": "http://image.huajiao.com/5ffb7f210f3df87e553b9bf884bd163e.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/31010_1.zip"
+            },
+                        {
+                "texiao_id": "31015_1",
+                "texiao_img_normal": "http://image.huajiao.com/ca8f90b3a9bc577b97dcaf15523cad42.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0321/31015_1.zip"
+            },
+                        {
+                "texiao_id": "31016_1",
+                "texiao_img_normal": "http://image.huajiao.com/9dbdb249c153c76e24553c77ca54ab5f.jpg",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0321/31016_1.zip"
+            },
+                       {
+                "texiao_id": "30031_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0312/30031_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0312/30031_1.zip"
+            },
+                        {
+                "texiao_id": "30009_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0312/30009_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/30009_1.zip"
+            },
+                        {
+                "texiao_id": "20003_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/20003_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/20003_1.zip"
+            },
+                       {
+                "texiao_id": "20001_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/20001_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/20001_1.zip"
+            },
+                       {
+                "texiao_id": "40001_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/40001_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/40001_1.zip"
+            },
+                      {
+                "texiao_id": "30020_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30020_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30020_1.zip"
+            },
+                       {
+                "texiao_id": "30021_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30021_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/30021_1.zip"
+            },
+                        {
+                "texiao_id": "30022_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30022_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30022_1.zip"
+            },
+                        {
+                "texiao_id": "30023_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30023_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30023_1.zip"
+            },
+                     {
+                "texiao_id": "50001_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/50001_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/50001_1.zip"
+            },
+                        {
+                "texiao_id": "30008_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30008_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30008_1.zip"
+            },
+                      {
+                "texiao_id": "30007_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30007_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30007_1.zip"
+            },
+                      {
+                "texiao_id": "30001_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30001_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30001_1.zip"
+            },
+                        {
+                "texiao_id": "30002_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30002_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30002_1.zip"
+            },
+                        {
+                "texiao_id": "30005_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/30005_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceu0308/30005_1.zip"
+            },
+                      {
+                "texiao_id": "50011_1",
+                "texiao_img_normal": "http://static.huajiao.com/huajiao/faceu0308/50011_1.png",
+                "texiao_url": "http://static.huajiao.com/huajiao/faceuandroid/50011_1.zip"
+            }
+        ]
+    }
+    ]

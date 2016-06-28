@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/white_round_bg" android:clickable="true" android:layout_width="274.0dip" android:layout_height="174.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="44.0dip" android:layout_marginRight="22.0dip">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/login_edit_white_round_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.huajiao.views.EditTextWithFont android:textSize="13.0dip" android:textColor="#ff4b4b4b" android:textColorHint="#ffd2d2d2" android:id="@id/code_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="15.0dip" android:hint="请输入右侧字符" android:cursorVisible="true" android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/code_iv" android:background="@drawable/white_rect_bg" android:clickable="true" android:layout_width="82.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" />
+                <com.huajiao.views.TextViewWithFont android:textSize="10.0dip" android:textColor="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="点击图片换一张" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.huajiao.views.ButtonWithFont android:enabled="false" android:textSize="15.0dip" android:textColor="@drawable/login_btn_state_text_color" android:id="@id/right_btn" android:background="@drawable/login_btn_state_bg" android:layout_width="231.0dip" android:layout_height="41.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="38.0dip" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

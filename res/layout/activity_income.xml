@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huajiao.views.TopBarView android:id="@id/actionbar_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="46.0dip" android:src="@drawable/ic_huajiao_ticket" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_huajiao_p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="" />
+    <TextView android:textSize="38.0sp" android:textColor="#ff000000" android:id="@id/tv_income_p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="0" />
+    <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_exchange" android:background="@drawable/round4_blue_btn_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="10.0dip" android:text="兑换花椒豆" />
+    <Button android:textSize="17.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/btn_with_draw" android:background="@drawable/round4_white_btn_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:text="提现" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0sp" android:textColor="#ff1dbbfe" android:id="@id/tv_help" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="常见问题" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

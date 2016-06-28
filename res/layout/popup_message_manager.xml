@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_empty" android:background="@drawable/bg_popup_message_manager" android:paddingTop="45.0dip" android:layout_width="fill_parent" android:layout_height="300.0dip" android:text="你尚未收到私信" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/layout_title_bar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignTop="@id/tv_empty">
+        <TextView android:textSize="16.0sp" android:textColor="#ff555555" android:id="@id/tv_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="通讯录" android:layout_centerVertical="true" />
+        <com.huajiao.views.TextViewWithBlodFont android:textSize="17.0dip" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的私信" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff555555" android:id="@id/tv_ignore_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="忽略未读" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.huajiao.views.listview.RefreshListView android:id="@id/popup_listview" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/layout_title_bar" />
+</RelativeLayout>

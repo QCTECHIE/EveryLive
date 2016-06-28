@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/btn_live_close_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/live_rotate_prepare" android:layout_toLeftOf="@id/img_close" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="140.0dip" android:layout_centerHorizontal="true">
+        <EditText android:textSize="18.0sp" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/edit_title_input" android:background="@android:color/transparent" android:layout_width="300.0dip" android:layout_height="50.0dip" android:hint="给你的直播写个标题吧" android:maxLines="1" android:maxLength="20" android:layout_centerInParent="true" android:inputType="text" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:id="@id/img_location" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="7.0dip" android:src="@drawable/icon_prepare_location_selector" android:scaleType="fitXY" />
+            <ImageView android:id="@id/img_weibo" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="7.0dip" android:src="@drawable/icon_prepare_weibo_selector" android:scaleType="fitXY" />
+            <ImageView android:id="@id/img_wechat" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="7.0dip" android:src="@drawable/icon_prepare_wechat_selector" android:scaleType="fitXY" />
+            <ImageView android:id="@id/img_wechat_circle" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="7.0dip" android:src="@drawable/icon_prepare_wechat_circle_selector" android:scaleType="fitXY" />
+            <ImageView android:id="@id/img_qq" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="7.0dip" android:src="@drawable/icon_prepare_qq_selector" android:scaleType="fitXY" />
+        </LinearLayout>
+        <Button android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/btn_begin_live" android:background="@drawable/btn_begin_live_selector" android:layout_width="200.0dip" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="开始直播" />
+    </LinearLayout>
+</RelativeLayout>

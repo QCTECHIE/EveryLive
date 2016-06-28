@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contact_barlayout_serach" android:background="@color/serach_bar_back" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/contact_textview_title" android:background="@drawable/serach_edittext" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/nav_search_white" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/serach_text_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="搜索" />
+        </LinearLayout>
+        <TextView android:background="@color/serach_line_back" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

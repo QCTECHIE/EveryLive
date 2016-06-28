@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_sound_main" android:clickable="true" android:layout_width="165.0dip" android:layout_height="165.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/btn_sound_shutdown" android:background="@drawable/live_voice_close" android:visibility="invisible" android:layout_width="165.0dip" android:layout_height="165.0dip" />
+    <View android:id="@id/btn_sound_open" android:background="@drawable/live_voice_open" android:visibility="invisible" android:layout_width="165.0dip" android:layout_height="165.0dip" />
+</RelativeLayout>

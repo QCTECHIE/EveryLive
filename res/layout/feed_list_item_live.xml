@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.huajiao.main.home.view.FeedTopComponent android:id="@id/feed_live_top" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/feed_top_component_height" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/feed_live_cover_view" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="centerCrop" fresco:placeholderImage="@drawable/main_def_bg" fresco:placeholderImageScaleType="centerCrop" fresco:actualImageScaleType="centerCrop" />
+        <ImageView android:background="@drawable/mask_live_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+        <ImageView android:id="@id/feed_live_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/explore_tag_live_big" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.huajiao.views.TextViewWithFont android:textSize="12.0sp" android:textColor="#ff555555" android:gravity="center_vertical" android:id="@id/feed_live_title" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:minHeight="40.0dip" android:singleLine="true" />
+    <include layout="@layout/list_adapter_divider_view" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+    <TextView android:textSize="13.719971sp" android:textColor="#ffffffff" android:id="@id/text_cancel" android:paddingLeft="19.599976dip" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:shadowColor="#ff000000" android:shadowRadius="4.0" />
+    <ImageView android:id="@id/img_choose" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="13.5dip" android:layout_marginRight="13.5dip" android:src="@drawable/imagepicker_picture_unselected" android:layout_alignParentRight="true" />
+    <View android:id="@id/view_click" android:clickable="true" android:layout_width="49.0dip" android:layout_height="49.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

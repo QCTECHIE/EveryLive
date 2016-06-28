@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/layer_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height">
+        <ImageView android:id="@id/go_back" android:layout_width="@dimen/top_bar_height" android:layout_height="fill_parent" android:src="@drawable/top_back_selector" android:scaleType="centerInside" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rank_title_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

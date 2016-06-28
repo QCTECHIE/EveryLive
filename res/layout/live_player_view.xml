@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.qihoo.livecloud.view.LiveCloudPlayView android:id="@id/gl2_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.huajiao.views.live.LiveLoadingView android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.huajiao.detail.view.LiveControllerView android:id="@id/controller_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

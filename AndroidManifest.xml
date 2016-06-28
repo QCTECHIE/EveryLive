@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.huajiao" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="true"/>
+    <uses-permission android:name="android.permission.TelephonyManager.CALL_STATE_RINGING"/>
+    <application android:allowBackup="false" android:icon="@drawable/logo180" android:label="@string/app_name_topbar" android:largeHeap="true" android:name="com.baidu.protect.StubApplication" android:persistent="true" android:supportsRtl="true" android:theme="@style/AppBaseTheme">
+        <activity android:name="com.huajiao.cover.CoverActivity" android:screenOrientation="portrait" android:theme="@style/TranslucentAppBaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="web.huajiao" android:scheme="huajiao"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qihoo.login.QihooLoginActivity" android:screenOrientation="portrait" android:theme="@style/AppBaseTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.huajiao.main.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.huajiao.main.oneshare.OneShareDialogActivity" android:screenOrientation="portrait" android:theme="@style/oneshareDialog" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="com.huajiao.imchat.ui.ImChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.contacts.ui.ContactsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.contacts.ui.SerachContactsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.huajiao.imchat.ui.OfficalMsgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.fieldcontrol.FieldControlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.topic.ui.TopicListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.main.message.secretary.SecretaryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.LoginAndRegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.SetProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.ValidateCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.ForgetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.SmsLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.SetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.ModifyPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.SetNickNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.invite.VerifyInviteCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.invite.LuckyRedPacketActivity" android:screenOrientation="portrait" android:theme="@style/CustomDialog.Outside"/>
+        <activity android:name="com.huajiao.user.LevelUpActivity" android:screenOrientation="portrait" android:theme="@style/CustomDialog.Outside"/>
+        <activity android:launchMode="singleTop" android:name="com.huajiao.main.message.MessageNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.huajiao.main.message.MessageCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.huajiao.main.message.MessageNewFansActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.huajiao.main.message.MessageOfficialActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.huajiao.main.message.UnFollowedMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.search.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.fieldcontrol.SearchFieldControlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.dispatch.ActivityJumpCenter" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.picturecreate.ActivityPictureDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.picturecreate.ActivityPictureDetailNew" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.video.ActivityVideoDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.video.ActivityVideoDetailNew" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.video.ActivityVideo" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.replay.CommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.huajiao.replay.ReplayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.huajiao.me.MySpaceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.personal.PersonalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.ranklist.hostranks.HostRankListFragmentsActivity" android:screenOrientation="portrait" android:theme="@style/transparentActivity"/>
+        <activity android:name="com.huajiao.ranklist.RichRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.personal.ReportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.FocusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.FansActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.imagepicker.gallery.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.imagepicker.gallery.GalleryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.live.FinishGalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.CertificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.ModifyUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.ModifyVerifiedActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="standard" android:name="com.huajiao.me.ActivityPhotoSourceChoose" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.huajiao.cover.PopularActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.MessageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.StartLiveNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.NotificationSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.user.bind.AccoutSafeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.ModifyUserNickNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.ModifyUserSignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.ActivityLogMode" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.me.ActivityUserAgreement" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.example.paranomicplayer.VrApi" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.huajiao.wallet.IncomeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.huajiao.detail.WatchesListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="action.com.huajiao.WATCHLIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.huajiao.detail.CycleLivePlayerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.dispatch.ActivityH5Inner" android:screenOrientation="portrait" android:theme="@style/transparentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="imchat" android:scheme="huajiao"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.huajiao.dispatch.ActivityH5Dispatch" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:host="huajiao.com" android:scheme="huajiao"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <service android:label="@string/app_name" android:name="com.huajiao.service.AppStoreNotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:process=":bs">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.huajiao.recommend.ActivityTodayHotAnchors" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.ranklist.ranks.RankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.live.LiveActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.finish.LiveFinishAuchorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.finish.FinishPhotoDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.live.MeiyanLiveActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.live.PrepareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.huajiao.live.AddTopicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.huajiao.live.ActivityLive" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.huajiao.main.prepare.ActivityLivingPrepare" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.main.prepare.ActivityCamera" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="standard" android:name="com.huajiao.picturecreate.ActivityPictureCreate" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huajiao.picturecreate.ActivityGallery" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.huajiao.picturecreate.ActivityPhotoReview" android:screenOrientation="portrait" android:theme="@style/ThemeActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.huajiao.blacklist.ActivityBlackList" android:screenOrientation="portrait"/>
+        <meta-data android:name="WEIMISTATS_APPKEY" android:value="e5c6583ee0eaf17435208e572bef49b3"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="91f1be6fb0b5718598b51af6952e2082"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.huajiao.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1104489251"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huajiao.videorecorder.VideoRecorder" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.videorecorder.CoverPicker" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.videorecorder.VideoPublish" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.huajiao.share.ShareFunctionActivity" android:theme="@style/ShareActivityStyle">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huajiao.share.ShareDemoActivity"/>
+        <activity android:name="com.huajiao.payment.PaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.huajiao.invite.SendInviteCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|layoutDirection|navigation|orientation|screenSize" android:name="com.iapppay.pay.channel.weixinpay.WeixinWapPayActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.heepay.plugin.activity.WeChatNotityActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.huajiao.feedback.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.huajiao.live.hd.HDLiveActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:name="com.qihoo.sdk.report.network.NetworkService"/>
+        <service android:name="com.qihoo.sdk.report.network.SurvivalService"/>
+        <provider android:authorities="34173cb38f07f89ddbebc2ac9128303f" android:name="com.qihoo.sdk.report.common.MultiprocessSharedPreferences"/>
+        <receiver android:name="com.huajiao.comm.im.NetworkProbe" android:process=":bs">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.huajiao.push.service.BusinessReceiver">
+            <intent-filter>
+                <action android:name="com.huajiao.QihooAlliance"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.huajiao.main.star.RankDetailActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.huajiao.comm.service.BgService" android:process=":bs"/>
+        <meta-data android:name="DC_APPKEY" android:value="34173cb38f07f89ddbebc2ac9128303f"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="55adc87767e58ed0fe000cca"/>
+        <service android:exported="true" android:name="com.huajiao.account.AuthenticationService" android:process=":bs">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:exported="true" android:name="com.huajiao.account.SyncService" android:process=":bs">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"/>
+        </service>
+        <provider android:authorities="com.huajiao.account.syncprovider" android:exported="false" android:name="com.huajiao.account.SyncProvider" android:process=":bs" android:syncable="true"/>
+        <activity android:hardwareAccelerated="true" android:name="com.huajiao.vr.tongyong.VrPlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.huajiao.vr.VRListActivity" android:screenOrientation="portrait" android:theme="@style/AppBaseTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.huajiao.vr.VRPlayerActivity" android:screenOrientation="landscape" android:theme="@style/LoadingTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="action.com.huajiao.VRPLAYER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huajiao.topic.MoreTopicActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="com.huajiao.imchat.pickimage.PickImageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="standard" android:name="com.huajiao.imchat.pickimage.TakePicActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="APP_CLASS" android:value="com.huajiao.base.BaseApplication"/>
+        <provider android:authorities="com.huajiao.protect.stubprovider" android:exported="false" android:initOrder="2147483647" android:name="com.baidu.protect.StubProvider"/>
+    </application>
+</manifest>

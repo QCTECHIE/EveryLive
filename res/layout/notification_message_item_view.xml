@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/auchor_layout" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/auchor_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/head_default" android:scaleType="centerCrop" app:riv_border_width="2.0dip" app:riv_border_color="@color/color_white_alpha_60" app:riv_oval="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/auchor_layout" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="#ff000000" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.huajiao.views.TextViewWithFont android:textSize="13.0dip" android:textColor="@color/text_color_4" android:id="@id/content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" />
+                <com.huajiao.views.TextViewWithFont android:textSize="11.0dip" android:textColor="#ff999999" android:id="@id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" />
+            </LinearLayout>
+            <ImageView android:id="@id/notification_right_iv" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/main_def_bg" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>
